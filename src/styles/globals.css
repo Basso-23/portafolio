@@ -6,3 +6,100 @@
   background-color: white;
   color: black;
 }
+
+.pageSize {
+  padding-left: 1rem /* 16px */;
+  padding-right: 1rem /* 16px */;
+}
+
+/* PARALLAX IMAGE________________________________________*/
+.parallax {
+  width: 100%;
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* HERO SECTION________________________________________*/
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-title {
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 500;
+  text-align: center;
+  max-width: 1100px;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+.label-up-socials {
+  display: block;
+  margin: 15px 15px;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  transition: 0.5s;
+}
+
+.black-button:hover .label-up-socials {
+  top: -135%;
+}
+
+.black-button {
+  background-color: #010101;
+  color: white;
+  display: inline-block;
+  border-width: 1px;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  height: 44px;
+  user-select: none;
+}
+
+.white-button:hover .label-up-socials {
+  top: -135%;
+}
+
+.white-button {
+  display: inline-block;
+  border-width: 1px;
+  border-color: #010101;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  height: 44px;
+  user-select: none;
+}
