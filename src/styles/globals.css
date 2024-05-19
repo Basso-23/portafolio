@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  background-color: white;
-  color: black;
+  background-color: #010001;
+  color: white;
 }
 
 .pageSize {
@@ -59,13 +59,13 @@
   transition: 0.5s;
 }
 
-.black-button:hover .label-up-socials {
+.white-button:hover .label-up-socials {
   top: -135%;
 }
 
-.black-button {
-  background-color: #010101;
-  color: white;
+.white-button {
+  background-color: #ffffff;
+  color: black;
   display: inline-block;
   border-width: 1px;
   font-weight: 600;
@@ -82,14 +82,14 @@
   user-select: none;
 }
 
-.white-button:hover .label-up-socials {
+.outline-button:hover .label-up-socials {
   top: -135%;
 }
 
-.white-button {
+.outline-button {
   display: inline-block;
   border-width: 1px;
-  border-color: #010101;
+  border-color: #ffffff;
   font-weight: 600;
   line-height: 1;
   font-size: 13px;

@@ -5,7 +5,7 @@ const Hero = () => {
   const Checkmark = ({ info }) => {
     return (
       <div className=" flex items-center gap-2 md:justify-center">
-        <div className="bg-black rounded-full p-[6px] text-[16px]  text-white ">
+        <div className="bg-black text-white rounded-full p-[6px] text-[16px]">
           <Check />
         </div>
         <div className="text-[19px] leading-none mt-[1px]">{info}</div>
@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       style={{
-        backgroundImage: "url(./hero.png)",
+        backgroundImage: "url(./hero.webp)",
       }}
       className="h-[100svh] parallax"
     >
@@ -31,15 +31,15 @@ const Hero = () => {
           website with Resonance.
         </div>
         <div className=" grid md:grid-cols-3 grid-cols-1 md:max-w-[700px] max-w-[300px] w-full gap-2 mt-10 animate-fade-up animate-delay-[300ms] ">
-          <div className="black-button">
+          <div className="white-button">
             <span className="label-up-socials">MULTI PAGE DEMOS</span>
             <span className="label-up-socials">MULTI PAGE DEMOS</span>
-          </div>
-          <div className="black-button">
-            <span className="label-up-socials">ONE PAGE DEMOS</span>
-            <span className="label-up-socials">ONE PAGE DEMOS</span>
           </div>
           <div className="white-button">
+            <span className="label-up-socials">ONE PAGE DEMOS</span>
+            <span className="label-up-socials">ONE PAGE DEMOS</span>
+          </div>
+          <div className="outline-button">
             <span className="label-up-socials">INTRO SECTIONS</span>
             <span className="label-up-socials">INTRO SECTIONS</span>
           </div>
