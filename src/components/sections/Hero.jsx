@@ -1,5 +1,7 @@
 import Check from "@/icons/Check";
 import React, { useState, useEffect } from "react";
+import Lottie from "lottie-react";
+import animationData from "../../../public/scroll-animation.json";
 
 const Hero = () => {
   const Checkmark = ({ info }) => {
@@ -20,7 +22,7 @@ const Hero = () => {
       }}
       className="h-[100svh] parallax"
     >
-      <div className="hero-container pageSize">
+      <div className="hero-container pageSize relative">
         <div className="lg:text-[20.5px] sm:text-[18px] second-title md:-mt-10 -mt-4 text-balance animate-fade-up ">
           RESONANCE — MODERN ONE/MULTI PAGE WORDPRESS THEME
         </div>
@@ -48,6 +50,9 @@ const Hero = () => {
           <Checkmark info={"10 Design Concepts"} />
           <Checkmark info={"135+ UI Sections"} />
           <Checkmark info={"Light & Dark Versions"} />
+        </div>
+        <div className=" absolute bottom-14 w-[25px] fixedCenterX sm:block hidden cursor-pointer">
+          <Lottie animationData={animationData} />
         </div>
       </div>
     </section>

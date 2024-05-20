@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main>
       <Hero />
-      <section className=" h-[100svh] w-full ">dadadad</section>
+      <section className=" h-[100svh] w-full "></section>
     </main>
   );
 };
