@@ -7,10 +7,12 @@ const Hero = () => {
   const Checkmark = ({ info }) => {
     return (
       <div className=" flex items-center gap-2 md:justify-center">
-        <div className="bg-black text-white rounded-full p-[6px] text-[16px]">
+        <div className="bg-black text-white rounded-full p-[6px] sm:text-[16px] text-[min(4vw,16px)] ">
           <Check />
         </div>
-        <div className="text-[19px] leading-none mt-[1px]">{info}</div>
+        <div className="sm:text-[19px] text-[min(5vw,19px)] leading-none mt-[1px]">
+          {info}
+        </div>
       </div>
     );
   };
@@ -22,17 +24,22 @@ const Hero = () => {
       }}
       className="h-[100svh] parallax"
     >
-      <div className="hero-container pageSize relative">
-        <div className="lg:text-[20.5px] sm:text-[18px] second-title md:-mt-10 -mt-4 text-balance animate-fade-up ">
-          RESONANCE — MODERN ONE/MULTI PAGE WORDPRESS THEME
+      <div className="hero-container ">
+        {/*//*________________________________________________________________________________*/}
+        <div className="text-[min(4vw,20.5px)] second-title md:-mt-10 -mt-4 animate-fade-up ">
+          PORTAFOLIO — ING. DE SOFTWARE/DESARROLLADOR WEB
         </div>
-        <div className="lg:text-[86px] md:text-[70px] sm:text-[60px] text-[40px] main-title mt-5 animate-fade-up animate-delay-[100ms] ">
-          Create your beautiful
+
+        {/*//*________________________________________________________________________________*/}
+        <div className="sm:text-[min(9vw,86px)] text-[min(9vw,60px)] main-title mt-5 animate-fade-up animate-delay-[100ms] ">
+          Descubre nuevas ideas
         </div>
-        <div className="lg:text-[86px] md:text-[70px] sm:text-[60px] text-[40px] main-title mt-2 animate-fade-up animate-delay-[200ms] ">
-          website with Resonance.
+        <div className="sm:text-[min(9vw,86px)] text-[min(9vw,60px)] main-title mt-2 animate-fade-up animate-delay-[200ms] ">
+          Explora mi Trabajo.
         </div>
-        <div className=" grid md:grid-cols-3 grid-cols-1 md:max-w-[700px] max-w-[300px] w-full gap-2 mt-10 animate-fade-up animate-delay-[300ms] ">
+
+        {/*//*________________________________________________________________________________*/}
+        <div className=" grid md:grid-cols-3 grid-cols-1 sm:text-[13px] text-[min(3vw,13px)] md:max-w-[700px] max-w-[300px] w-full gap-2 mt-10 animate-fade-up animate-delay-[300ms] ">
           <div className="white-button">
             <span className="label-up-socials">MULTI PAGE DEMOS</span>
             <span className="label-up-socials">MULTI PAGE DEMOS</span>
@@ -46,12 +53,16 @@ const Hero = () => {
             <span className="label-up-socials">INTRO SECTIONS</span>
           </div>
         </div>
+
+        {/*//*________________________________________________________________________________*/}
         <div className=" grid md:grid-cols-3 grid-cols-1 w-fit md:gap-2 gap-4 mt-[52px] animate-fade-up animate-delay-[500ms] ">
           <Checkmark info={"10 Design Concepts"} />
           <Checkmark info={"135+ UI Sections"} />
           <Checkmark info={"Light & Dark Versions"} />
         </div>
-        <div className=" absolute bottom-14 w-[25px] fixedCenterX sm:block hidden cursor-pointer">
+
+        {/*//*________________________________________________________________________________*/}
+        <div className="animation-container fixedCenterX sm:block hidden">
           <Lottie animationData={animationData} />
         </div>
       </div>
