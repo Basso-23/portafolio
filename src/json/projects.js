@@ -44,7 +44,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Abogados_Firma",
   },
   {
-    name: "Sistema de votación",
+    name: "Sistema de Votación",
     category: "full-stack",
     image: "https://i.imgur.com/Xsm32kU.png",
     url: "https://github.com/Basso-23/Sistema_Elecciones",

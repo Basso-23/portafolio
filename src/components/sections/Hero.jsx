@@ -26,15 +26,15 @@ const Hero = () => {
     >
       <div className="hero-container ">
         {/*//*________________________________________________________________________________*/}
-        <div className="text-[min(4vw,20.5px)] second-title md:-mt-10 -mt-4 animate-fade-up ">
+        <div className="text-[min(4vw,17px)] second-title md:-mt-10 -mt-4 animate-fade-up ">
           PORTAFOLIO — ING. DE SOFTWARE/DESARROLLADOR WEB
         </div>
 
         {/*//*________________________________________________________________________________*/}
-        <div className="sm:text-[min(9vw,86px)] text-[min(9vw,60px)] main-title mt-5 animate-fade-up animate-delay-[100ms] ">
+        <div className="sm:text-[min(9vw,80px)] text-[min(9vw,60px)] main-title mt-5 animate-fade-up animate-delay-[100ms] ">
           Descubre nuevas ideas
         </div>
-        <div className="sm:text-[min(9vw,86px)] text-[min(9vw,60px)] main-title mt-2 animate-fade-up animate-delay-[200ms] ">
+        <div className="sm:text-[min(9vw,80px)] text-[min(9vw,60px)] main-title mt-2 animate-fade-up animate-delay-[200ms] ">
           Explora mi Trabajo.
         </div>
 

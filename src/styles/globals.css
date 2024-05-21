@@ -200,6 +200,10 @@
   cursor: pointer;
   height: 44px;
   user-select: none;
+  text-transform: capitalize;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .filter:hover {
@@ -222,4 +226,22 @@
   pointer-events: none;
   height: 44px;
   user-select: none;
+  text-transform: capitalize;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.loader {
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3.5px solid #7c7c7d;
+  border-right-color: #3b3a3a;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
 }
