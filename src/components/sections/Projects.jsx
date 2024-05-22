@@ -8,7 +8,7 @@ import Visit from "@/icons/Visit";
 import { useAtom } from "jotai";
 import { originalAtom } from "@/atom";
 import { dataAtom } from "@/atom";
-import ImageRender from "../elements/ImageRender";
+import ImageRender from "../utils/ImageRender";
 
 const Projects = () => {
   const [currentFilter, setCurrentFilter] = useState("proyectos");

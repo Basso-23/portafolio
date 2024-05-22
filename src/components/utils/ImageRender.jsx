@@ -16,7 +16,7 @@ const ImageRender = ({ url }) => {
         }, 1300);
       };
     }
-  }, [url]);
+  }, [url, imageLoaded, setImageLoaded]);
 
   return (
     <div className="relative bg-[#111111] rounded-sm">

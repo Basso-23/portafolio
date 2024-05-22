@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ImageRender from "../elements/ImageRender";
 import Send from "@/icons/Send";
 import Github from "@/icons/Github";
+import ImageRender from "@/components/utils/ImageRender";
 
 const Hero = () => {
   return (
@@ -29,12 +29,8 @@ const Hero = () => {
         </div>
 
         {/*//*________________________________________________________________________________*/}
-        <div className="relative text-end lg:block hidden">
+        <div className="relative lg:block hidden">
           <ImageRender url={"https://i.imgur.com/sVqvpsf.png"} />
-          <div className="image-tag hidden">
-            <div>Unbench</div>
-            <div className="text-[#5b5b5b]">Design Originals</div>
-          </div>
         </div>
       </div>
     </section>
