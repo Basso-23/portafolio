@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
+import Navbar from "@/components/sections/Navbar";
 
 const Home = () => {
   return (
-    <main>
-      <Hero />
-      <Projects />
-      <section className=" h-[100svh] w-full "></section>
+    <main className="mb-20">
+      <Navbar />
+      <div className="pt-[60px]">
+        <Hero />
+        <Projects />
+      </div>
     </main>
   );
 };
