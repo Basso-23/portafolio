@@ -9,12 +9,11 @@ import Code from "@/icons/Code";
 
 const Navbar = () => {
   return (
-    <section className="navbar-container 2xl:px-10">
+    <section className="navbar-container 2xl:px-6">
       <div className="navbar-desktop 2xl:flex hidden">
         {/*//*________________________________________________________________________________*/}
         <div className="navbar-content">
-          <div className="portafolio">PORTAFOLIO</div>
-          <div className="sec divider">
+          <div className="sec">
             <All /> <span>Proyectos</span>
           </div>
           <div className="sec">
@@ -49,7 +48,6 @@ const Navbar = () => {
 
       {/*//*________________________________________________________________________________*/}
       <div className="navbar-mobile 2xl:hidden flex">
-        <div className="text-white font-semibold text-lg ">PORTAFOLIO</div>
         <div>menu</div>
       </div>
     </section>

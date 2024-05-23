@@ -9,9 +9,9 @@ const Hero = () => {
       <div className="grid lg:grid-cols-2 items-center">
         <div>
           {/*//*________________________________________________________________________________*/}
-          <div className="title sm:text-[62px] text-[45px]">Descubre</div>
-          <div className="title sm:text-[62px] text-[45px] sm:mt-12 mt-8">
-            nuevas ideas.
+          <div className="title sm:text-[50px] text-[45px]">Descubre mis</div>
+          <div className="title sm:text-[50px] text-[45px] mt-9">
+            habilidades.
           </div>
           <div className="subtitle sm:pt-8 pt-6">
             ¡Explora mi trabajo! Aquí encontrarás una selección de mis proyectos

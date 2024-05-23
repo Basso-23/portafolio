@@ -9,6 +9,7 @@ import { useAtom } from "jotai";
 import { originalAtom } from "@/atom";
 import { dataAtom } from "@/atom";
 import ImageRender from "../utils/ImageRender";
+import { motion as m } from "framer-motion";
 
 const Projects = () => {
   const [currentFilter, setCurrentFilter] = useState("proyectos");
@@ -22,7 +23,11 @@ const Projects = () => {
           setCurrentFilter(name);
           filtering(name);
         }}
-        className={name === currentFilter ? "active" : "inactive"}
+        className={
+          name === currentFilter
+            ? "active sm:min-w-0 min-w-[90px]"
+            : "inactive sm:min-w-0 min-w-[90px]"
+        }
       >
         {icon}
         {name}
@@ -44,7 +49,7 @@ const Projects = () => {
   return (
     <section className="pageSize min-h-screen sm:mt-20 mt-10">
       {/*//*________________________________________________________________________________*/}
-      <div className="filter-container">
+      <div className="filter-container sm:gap-[30px] gap-[12px]">
         <Filter name={"proyectos"} icon={<All />} />
         <Filter name={"diseño"} icon={<Design />} />
         <Filter name={"full-stack"} icon={<Stack />} />
@@ -55,7 +60,7 @@ const Projects = () => {
       <div className="grid-container">
         {data
           .map((item, index) => (
-            <div key={index} className="project-container">
+            <m.div layout key={index} className="project-container">
               <ImageRender url={item.image} />
               <div className="info">
                 <div>{item.name}</div>
@@ -74,7 +79,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </m.div>
           ))
           .reverse()}
       </div>
