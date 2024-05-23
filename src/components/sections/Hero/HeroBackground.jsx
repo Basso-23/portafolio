@@ -8,14 +8,14 @@ export function HeroBackground() {
       {/*//*________________________________________________________________________________*/}
       <section className="sm:block hidden">
         <AuroraBackground>
-          <div className="z-30 pt-[15px]">
+          <div className="pt-[60px] z-20">
             <Hero />
           </div>
         </AuroraBackground>
       </section>
 
       {/*//*________________________________________________________________________________*/}
-      <section className="sm:hidden block pt-[0px]">
+      <section className="sm:hidden block pt-[70px]">
         <Hero />
       </section>
     </>

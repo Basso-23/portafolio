@@ -1,6 +1,6 @@
 export const projects = [
   {
-    name: "Portafolio 2023",
+    name: "Modul",
     category: "diseño",
     image:
       "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/640f081eddfa9557dda7f00b_Shopify%20Editions%20Cover-p-500.png",
@@ -9,7 +9,7 @@ export const projects = [
   },
 
   {
-    name: "Babershop",
+    name: "Framepad",
     category: "diseño",
     image:
       "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/644616270e2ba685ff34a115_Eclipse%20Cover-p-500.png",
@@ -18,7 +18,7 @@ export const projects = [
   },
 
   {
-    name: "Ecommerce",
+    name: "Eleveight Supply",
     category: "diseño",
     image:
       "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/66386b2a50f3ae5a3d0da717_Agora%20Cover-p-500.png",
@@ -26,7 +26,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Estructura_Ecommerce",
   },
   {
-    name: "Hoshi Creative",
+    name: "Gradient",
     category: "diseño",
     image:
       "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/63f646626d2dda06599ad479_63e2564fba9ea30b3d3e3871_Image%252001.png",
@@ -34,7 +34,7 @@ export const projects = [
     github: "https://www.hoshicreative.art/",
   },
   {
-    name: "Dogur",
+    name: "Drams",
     category: "diseño",
     image:
       "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/6426da70fc34cecf7d811d8a_Lightship%20Cover-min-p-500.png",
@@ -42,7 +42,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Dogur",
   },
   {
-    name: "Muñoz & Asociados",
+    name: "Nucleo",
     category: "diseño",
     image:
       "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/644a79a0a1f32e5992c32db6_WORK%20LOUDER%20Cover-p-500.png",
@@ -50,7 +50,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Abogados_Firma",
   },
   {
-    name: "Sistema de Votación",
+    name: "Evrone",
     category: "full-stack",
     image:
       "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/65a54d41c781c824fbaa2a62_SUITSUPPLY%20Cover-p-800.png",
