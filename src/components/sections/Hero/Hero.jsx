@@ -9,28 +9,34 @@ const Hero = () => {
       <div className="grid lg:grid-cols-2">
         <div>
           {/*//*________________________________________________________________________________*/}
-          <div className="title">Web design inspiration catalog</div>
+          <div className="title sm:text-[32px] text-[28px]">
+            Descubre nuevas ideas.
+          </div>
+          <div className="title sm:text-[32px] text-[28px]">
+            Explora mi Trabajo
+          </div>
           <div className="subtitle">
-            Unleash your creativity with out-of-this-world web design
-            inspiration from across the web
+            Bienvenido a mi portafolio, soy un Ing. de Software especializado en
+            desarrollo de web. Aquí encontrarás una selección de mis proyectos
+            más destacados.
           </div>
 
           {/*//*________________________________________________________________________________*/}
           <div className="buttons-container lg:flex lg:flex-row flex flex-col">
             <div className="correo-button lg:w-fit w-full hover:bg-[#d1d1d1]">
               <Send />
-              Copiar Correo Electrónico
+              Correo Electrónico
             </div>
             <div className="github-button lg:w-fit w-full hover:bg-[#343434]">
               <Github />
-              Explorar Github
+              Ver Github
             </div>
           </div>
         </div>
 
         {/*//*________________________________________________________________________________*/}
         <div className="relative lg:block hidden">
-          <ImageRender url={"https://i.imgur.com/sVqvpsf.png"} />
+          <ImageRender url={"https://i.imgur.com/x9SN9ss.png"} />
         </div>
       </div>
     </section>

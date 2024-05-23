@@ -8,7 +8,7 @@ const AuroraBackground = ({
   ...props
 }) => {
   return (
-    <main className="sm:block hidden">
+    <main>
       <div
         className={cn(
           "relative flex flex-col h-fit bg-black text-slate-950 transition-bg",
