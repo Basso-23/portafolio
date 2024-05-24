@@ -47,7 +47,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="pageSize min-h-screen sm:mt-20 mt-10">
+    <section className="pageSize min-h-[90svh] sm:mt-20 mt-10">
       {/*//*________________________________________________________________________________*/}
       <div className="filter-container sm:gap-[30px] gap-[12px]">
         <Filter name={"proyectos"} icon={<All />} />

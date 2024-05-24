@@ -6,14 +6,16 @@ import ImageRender from "@/components/utils/ImageRender";
 const Hero = () => {
   return (
     <section className="pageSize sm:pt-20 pt-10 ">
-      <div className="grid lg:grid-cols-2 items-center">
+      <div className="grid lg:grid-cols-2 items-center sm:justify-start justify-center">
         <div>
           {/*//*________________________________________________________________________________*/}
-          <div className="title sm:text-[50px] text-[45px]">Descubre mis</div>
-          <div className="title sm:text-[50px] text-[45px] mt-9">
+          <div className="title sm:text-[50px] text-[45px] sm:text-start text-center">
+            Descubre mis
+          </div>
+          <div className="title sm:text-[50px] text-[45px] sm:text-start text-center mt-9 ">
             habilidades.
           </div>
-          <div className="subtitle sm:pt-8 pt-6">
+          <div className="subtitle sm:pt-8 pt-6 sm:text-start text-center">
             ¡Explora mi trabajo! Aquí encontrarás una selección de mis proyectos
             más destacados.
           </div>

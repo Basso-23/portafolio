@@ -1,7 +1,7 @@
-import { PiCopy } from "react-icons/pi";
+import { SiMaterialformkdocs } from "react-icons/si";
 
 const Clip = () => {
-  return <PiCopy />;
+  return <SiMaterialformkdocs />;
 };
 
 export default Clip;
