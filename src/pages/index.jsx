@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Projects from "@/components/sections/Projects";
 import { HeroBackground } from "@/components/sections/Hero/HeroBackground";
 import Navbar from "@/components/sections/Navbar";
+import Footer from "@/components/sections/Footer";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar />
       <HeroBackground />
       <Projects />
+      <Footer />
     </main>
   );
 };
