@@ -31,11 +31,9 @@ const Navbar = () => {
 
         {/*//*________________________________________________________________________________*/}
         <div className="lg:hidden flex items-center justify-between w-full">
-          <div className="sm:hidden block p-logo">P</div>
-          <div className="sm:block hidden text-lg font-semibold">
-            Portafolio
-          </div>
-          <div className="-mr-2">
+          <div className="sm:hidden block"></div>
+          <div className="sm:block hidden text-lg font-medium">Portafolio</div>
+          <div className="sm:-mr-2 -mr-1">
             <Menu />
           </div>
         </div>

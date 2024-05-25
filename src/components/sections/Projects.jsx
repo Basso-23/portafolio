@@ -8,7 +8,7 @@ import Visit from "@/icons/Visit";
 import { useAtom } from "jotai";
 import { originalAtom } from "@/atom";
 import { dataAtom } from "@/atom";
-import ImageRender from "../utils/ImageRender";
+import RenderImage from "../utils/RenderImage";
 import { motion as m } from "framer-motion";
 
 const Projects = () => {
@@ -47,7 +47,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="pageSize min-h-[90svh] sm:mt-20 mt-10">
+    <section className="pageSize min-h-[90svh] sm:mt-20 mt-10 pb-3">
       {/*//*________________________________________________________________________________*/}
       <div className="filter-container sm:gap-[30px] gap-[12px]">
         <Filter name={"proyectos"} icon={<All />} />
@@ -61,7 +61,7 @@ const Projects = () => {
         {data
           .map((item, index) => (
             <m.div layout key={index} className="project-container">
-              <ImageRender url={item.image} />
+              <RenderImage url={item.image} />
               <div className="info">
                 <div>{item.name}</div>
                 <div className="icons-container">

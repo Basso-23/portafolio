@@ -3,7 +3,7 @@ import { useAtom } from "jotai";
 import { imageAtom } from "@/atom";
 import Tilt from "react-parallax-tilt";
 
-const ImageRender = ({ url }) => {
+const RenderImage = ({ url }) => {
   const [imageLoaded, setImageLoaded] = useAtom(imageAtom);
 
   useEffect(() => {
@@ -40,4 +40,4 @@ const ImageRender = ({ url }) => {
   );
 };
 
-export default ImageRender;
+export default RenderImage;

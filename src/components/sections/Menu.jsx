@@ -12,18 +12,17 @@ const Menu = () => {
       <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
       {isOpen && (
         <div className="menu-container">
-          <div className="option-title">Menu</div>
-          <div className="option hover:bg-[#343434]">
+          <div className="option hover:bg-[#ececec]">
             <Send />
-            <span className="text-[13px]"> Correo Electrónico</span>
+            <span className="text-[13px]">Correo Electrónico</span>
           </div>
-          <div className="option hover:bg-[#343434]">
+          <div className="option hover:bg-[#ececec]">
             <Github /> <span className="text-[13px]">Github</span>
           </div>
-          <div className="option hover:bg-[#343434]">
+          <div className="option hover:bg-[#ececec]">
             <Linkedin /> <span className="text-[13px]">LinkedIn</span>
           </div>
-          <div className="option-last hover:bg-[#343434]">
+          <div style={{ border: "none" }} className="option hover:bg-[#ececec]">
             <Download /> <span className="text-[13px]">Currículum</span>
           </div>
         </div>

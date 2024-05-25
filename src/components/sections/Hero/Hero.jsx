@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Send from "@/icons/Send";
 import Github from "@/icons/Github";
-import ImageRender from "@/components/utils/ImageRender";
+import RenderImage from "@/components/utils/RenderImage";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
             Descubre mis
           </div>
           <div className="title sm:text-[50px] text-[45px] sm:text-start text-center mt-9 ">
-            habilidades.
+            habilidades
           </div>
           <div className="subtitle sm:pt-8 pt-6 sm:text-start text-center">
             ¡Explora mi trabajo! Aquí encontrarás una selección de mis proyectos
@@ -35,7 +35,7 @@ const Hero = () => {
 
         {/*//*________________________________________________________________________________*/}
         <div className="relative lg:block hidden">
-          <ImageRender url={"https://i.imgur.com/x9SN9ss.png"} />
+          <RenderImage url={"https://i.imgur.com/x9SN9ss.png"} />
         </div>
       </div>
     </section>

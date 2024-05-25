@@ -6,7 +6,7 @@ import Footer from "@/components/sections/Footer";
 
 const Home = () => {
   return (
-    <main className="mb-20 tracking-[-0.02rem]">
+    <main className="tracking-[-0.02rem]">
       <Navbar />
       <HeroBackground />
       <Projects />
