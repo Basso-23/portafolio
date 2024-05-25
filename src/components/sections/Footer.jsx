@@ -61,11 +61,11 @@ const Footer = () => {
               Conoce más sobre mí
             </div>
             <div className="banner-subtitle lg:text-start text-center">
-              Explora mi trayectoria y mis diversos conocimientos.
+              Explora mi trayectoria y mis diversas aptitudes.
             </div>
           </div>
           <div className="w-full flex lg:justify-end justify-center">
-            <div className="banner-download hover:bg-[#d1d1d1]">
+            <div className="banner-download hover:bg-[#d1d1d1] lg:mt-[16px] mt-6">
               <Download /> <span>Descargar CV</span>
             </div>
           </div>

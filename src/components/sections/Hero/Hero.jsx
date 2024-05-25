@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
 
           {/*//*________________________________________________________________________________*/}
-          <div className="buttons-container sm:grid-cols-2 grid-cols-1">
+          <div className="buttons-container sm:grid-cols-2 grid-cols-1 sm:mx-0 mx-auto">
             <div className="correo-button hover:bg-[#d1d1d1]">
               <Send />
               <span className="text-sm">Correo Electrónico</span>
@@ -35,7 +35,11 @@ const Hero = () => {
 
         {/*//*________________________________________________________________________________*/}
         <div className="relative lg:block hidden">
-          <RenderImage url={"https://i.imgur.com/x9SN9ss.png"} />
+          <RenderImage
+            url={
+              "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/6426da70fc34cecf7d811d8a_Lightship%20Cover-min-p-500.png"
+            }
+          />
         </div>
       </div>
     </section>
