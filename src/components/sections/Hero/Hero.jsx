@@ -9,15 +9,15 @@ const Hero = () => {
       <div className="grid lg:grid-cols-2 items-center sm:justify-start justify-center">
         <div>
           {/*//*________________________________________________________________________________*/}
-          <div className="title sm:text-[50px] text-[45px] sm:text-start text-center">
-            Descubre mis
+          <div className="title sm:text-[50px] text-[43px] sm:text-start text-center">
+            Explora mis
           </div>
-          <div className="title sm:text-[50px] text-[45px] sm:text-start text-center mt-9 ">
-            habilidades
+          <div className="title sm:text-[50px] text-[43px] sm:text-start text-center sm:mt-10 mt-9 ">
+            últimos trabajos
           </div>
           <div className="subtitle sm:pt-8 pt-6 sm:text-start text-center">
-            ¡Explora mi trabajo! Aquí encontrarás una selección de mis proyectos
-            más destacados.
+            ¡Bienvenido! Aquí encontrarás una selección de mis proyectos más
+            destacados.
           </div>
 
           {/*//*________________________________________________________________________________*/}
@@ -35,11 +35,7 @@ const Hero = () => {
 
         {/*//*________________________________________________________________________________*/}
         <div className="relative lg:block hidden">
-          <RenderImage
-            url={
-              "https://assets-global.website-files.com/63bea64d5a430503eed2e6cc/6426da70fc34cecf7d811d8a_Lightship%20Cover-min-p-500.png"
-            }
-          />
+          <RenderImage url={"https://i.imgur.com/wTHwSPN.jpeg"} />
         </div>
       </div>
     </section>

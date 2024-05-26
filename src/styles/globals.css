@@ -117,7 +117,6 @@
   overflow: hidden;
   border-width: 1px;
   border-color: #27272a;
-  padding: 4px;
 }
 
 .option {
@@ -126,14 +125,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem /* 8px */;
-  padding-left: 0.65rem /* 16px */;
-  padding-right: 0.65rem /* 16px */;
-  padding-bottom: 0.7rem /* 16px */;
-  padding-top: 0.7rem /* 16px */;
+  padding: 12px;
   cursor: pointer;
   user-select: none;
   color: white;
   border-radius: 2px;
+  margin: 2px 4px;
 }
 
 .option:hover {
@@ -146,16 +143,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem /* 8px */;
-  padding-left: 0.65rem /* 16px */;
-  padding-right: 0.65rem /* 16px */;
-  padding-bottom: 0.75rem /* 16px */;
-  padding-top: 0.6rem /* 16px */;
+  padding: 12px;
   user-select: none;
   color: white;
   font-weight: 500;
   border-bottom-width: 1px;
   border-color: #27272a;
-  margin-bottom: 3px;
 }
 
 /**HERO SECTION ________________________________________________*/
@@ -196,7 +189,7 @@
   align-items: center;
   display: flex;
   user-select: none;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .github-button {
@@ -360,7 +353,7 @@
   font-weight: 600;
   font-size: 40px;
   text-wrap: balance;
-  line-height: 45px;
+  line-height: 43px;
 }
 
 .banner-subtitle {
@@ -383,6 +376,7 @@
   border-radius: 0.125rem /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
+  font-weight: 500;
 }
 
 .pulse-container {

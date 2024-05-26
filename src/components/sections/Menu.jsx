@@ -15,7 +15,7 @@ const Menu = () => {
           <div className="option-title">
             <span className="text-[13px]">Menu</span>
           </div>
-          <div className="option">
+          <div style={{ marginTop: 4 }} className="option">
             <Send />
             <span className="text-[13px]">Correo Electrónico</span>
           </div>
@@ -25,7 +25,7 @@ const Menu = () => {
           <div className="option">
             <Linkedin /> <span className="text-[13px]">LinkedIn</span>
           </div>
-          <div style={{ border: "none" }} className="option">
+          <div style={{ marginBottom: 4 }} className="option">
             <Download /> <span className="text-[13px]">Currículum</span>
           </div>
         </div>

@@ -58,10 +58,10 @@ const Footer = () => {
         <div className="banner-container lg:grid-cols-2 grid-cols-1 lg:items-start items-center lg:py-14 py-10 lg:px-10 px-6">
           <div>
             <div className="banner-title lg:text-start text-center">
-              Conoce más sobre mí
+              Descubre más sobre mí
             </div>
             <div className="banner-subtitle lg:text-start text-center">
-              Explora mi trayectoria y mis diversas aptitudes.
+              Conoce mi trayectoria y mis diversas aptitudes.
             </div>
           </div>
           <div className="w-full flex lg:justify-end justify-center">
