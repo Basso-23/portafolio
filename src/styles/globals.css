@@ -172,6 +172,7 @@
   display: grid;
   max-width: 450px;
   margin-top: 2.5rem;
+  align-items: center;
 }
 
 .correo-button {
@@ -198,14 +199,14 @@
   border-color: #343434;
   gap: 0.5rem;
   line-height: 1;
-  background-color: black;
+  background-color: #0d0d0d;
   justify-content: center;
   font-size: 15px;
   color: white;
   padding-left: 1rem /* 16px */;
   padding-right: 1rem /* 16px */;
   border-radius: 2px;
-  height: 45px;
+  height: 48px;
   align-items: center;
   display: flex;
   user-select: none;
@@ -215,7 +216,6 @@
 
 .filter-container {
   display: flex;
-
   overflow-x: auto;
   padding-bottom: 0.75rem;
 }
@@ -484,6 +484,7 @@
   border-width: 1px;
   border-color: #242424;
   width: 100%;
+  transition-property: transform !important;
 }
 
 .loader {

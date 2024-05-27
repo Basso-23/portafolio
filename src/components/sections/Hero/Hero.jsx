@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
             <div className="github-button hover:bg-[#343434]">
               <Github />
-              <span className="text-sm">Ver Github</span>
+              <span className="text-sm">Github</span>
             </div>
           </div>
         </div>

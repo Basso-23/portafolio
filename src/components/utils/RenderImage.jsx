@@ -3,7 +3,7 @@ import { useAtom } from "jotai";
 import { imageAtom } from "@/atom";
 import Tilt from "react-parallax-tilt";
 
-const RenderImage = ({ url }) => {
+const RenderImage = ({ url, soon }) => {
   const [imageLoaded, setImageLoaded] = useAtom(imageAtom);
 
   useEffect(() => {
@@ -33,6 +33,7 @@ const RenderImage = ({ url }) => {
         style={{
           backgroundImage: `url(${url})`,
           visibility: imageLoaded ? "hidden" : "visible",
+          backgroundPosition: soon ? "center" : "top",
         }}
         className="image"
       ></Tilt>
