@@ -35,7 +35,7 @@ const Hero = () => {
 
         {/*//*________________________________________________________________________________*/}
         <div className="relative lg:block hidden">
-          <RenderImage url={"https://i.imgur.com/wTHwSPN.jpeg"} />
+          <RenderImage url={"https://i.imgur.com/idov15P.jpeg"} />
         </div>
       </div>
     </section>

@@ -73,7 +73,7 @@ const Projects = () => {
               <AlertDialog>
                 <AlertDialogTrigger asChild>
                   <div onClick={() => setTempKey(item.name)}>
-                    <RenderImage url={item.image} soon={item.soon} />
+                    <RenderImage url={item.image} />
                   </div>
                 </AlertDialogTrigger>
                 <div className="info">
@@ -103,10 +103,10 @@ const Projects = () => {
                     <AlertDialogCancel asChild>
                       <div
                         style={{ fontFamily: "Inter Variable, sans-serif" }}
-                        className=" flex gap-[2px] items-center text-[13px] font-medium w-fit cursor-pointer text-[#5b5b5b] hover:text-white leading-none mx-9 mt-9"
+                        className=" flex gap-[2px] items-center text-[13px] font-medium w-fit cursor-pointer text-[#5b5b5b] hover:text-white leading-none mx-12 mt-9"
                       >
                         <Back />
-                        <span>Volver a Proyectos</span>
+                        <span>Volver</span>
                       </div>
                     </AlertDialogCancel>
                     <Modal project={tempKey} />
