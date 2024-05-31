@@ -65,8 +65,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full flex lg:justify-end justify-center">
-            <div className="banner-download hover:bg-[#d1d1d1] lg:mt-[16px] mt-6">
-              <Download /> <span>Descargar CV</span>
+            <div className="banner-download hover:bg-[#d1d1d1] text-[#222222] lg:mt-[16px] mt-6">
+              <span>Ver Currículum</span> <Visit />
             </div>
           </div>
         </div>
@@ -76,8 +76,8 @@ const Footer = () => {
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
             <div className="pulse-container">
-              <div className="pulse"></div>
-              <div>Disponible</div>
+              <div className="w-2 aspect-square rounded-full bg-[#0171F3]"></div>
+              <div className=" text-[#0171F3] ">Galería de proyectos.</div>
             </div>
             <div className="social-container">
               <Links icon={<Send />} url={"www.google.com"} />
@@ -121,8 +121,8 @@ const Footer = () => {
               style={{ marginTop: 0, justifyContent: "end" }}
               className="pulse-container"
             >
-              <div>Disponible</div>
-              <div className="pulse"></div>
+              <div className="w-2 aspect-square rounded-full bg-[#0171F3]"></div>
+              <div className=" text-[#0171F3] ">Galería de proyectos.</div>
             </div>
           </div>
 

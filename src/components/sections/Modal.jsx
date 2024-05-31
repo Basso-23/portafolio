@@ -48,7 +48,7 @@ const Modal = ({ project }) => {
               <div className="font-bold leading-[45px] text-[40px] mt-2">
                 {item.name}
               </div>
-              <div className="mt-6 text-[#bcbcbc] text-[16px]">
+              <div className="mt-6 text-[#bcbcbc] text-[15px]">
                 Diseño para una tienda de donas para destacar su variedad de
                 sabores únicos.
               </div>
@@ -86,17 +86,13 @@ const Modal = ({ project }) => {
               </div>
 
               <div className=" grow justify-end flex flex-col">
-                <div className=" grid grid-cols-1 gap-3 items-center text-sm font-medium">
+                <div className=" grid grid-cols-1 gap-3 items-center text-sm">
                   <div className="bg-white text-black hover:bg-[#d1d1d1] h-[45px] text-[14px] flex items-center justify-center gap-[6px] rounded-sm cursor-pointer leading-none">
                     <span> Visitar sitio</span>
-                    <div className="mt-[2px]">
-                      <Visit />
-                    </div>
+                    <Visit />
                   </div>
                   <div className="bg-transparent border border-[#343434] hover:bg-[#343434] h-[48px] text-[14px] flex items-center justify-center gap-[6px] rounded-sm cursor-pointer leading-none">
-                    <div className="mt-[2px]">
-                      <Github />
-                    </div>
+                    <Github />
                     <span>Código fuente</span>
                   </div>
                 </div>

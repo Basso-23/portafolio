@@ -1,7 +1,7 @@
-import { GrDownload } from "react-icons/gr";
+import { LiaDownloadSolid } from "react-icons/lia";
 
 const Download = () => {
-  return <GrDownload />;
+  return <LiaDownloadSolid />;
 };
 
 export default Download;

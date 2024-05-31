@@ -13,20 +13,20 @@ const Menu = () => {
       {isOpen && (
         <div className="menu-container">
           <div className="option-title">
-            <span className="text-[13px]">Menu</span>
+            <span className="text-[14px]">Menu</span>
           </div>
           <div style={{ marginTop: 4 }} className="option">
             <Send />
-            <span className="text-[13px]">Correo Electrónico</span>
+            <span className="text-[14px]">Correo Electrónico</span>
           </div>
           <div className="option">
-            <Github /> <span className="text-[13px]">Github</span>
+            <Github /> <span className="text-[14px]">Github</span>
           </div>
           <div className="option">
-            <Linkedin /> <span className="text-[13px]">LinkedIn</span>
+            <Linkedin /> <span className="text-[14px]">LinkedIn</span>
           </div>
           <div style={{ marginBottom: 4 }} className="option">
-            <Download /> <span className="text-[13px]">Currículum</span>
+            <Download /> <span className="text-[14px]">Currículum</span>
           </div>
         </div>
       )}

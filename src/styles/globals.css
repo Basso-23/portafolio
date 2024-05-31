@@ -76,7 +76,7 @@
 
 .navbar-content {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
   font-size: 13.5px;
   line-height: 1;
@@ -90,6 +90,7 @@
   user-select: none;
   color: #838586;
   font-weight: 500;
+  font-size: 14px;
 }
 
 .sec:hover {
@@ -165,6 +166,7 @@
   color: #818181;
   max-width: 475px;
   text-wrap: pretty;
+  font-size: 16px;
 }
 
 .buttons-container {
@@ -176,40 +178,38 @@
 }
 
 .correo-button {
-  justify-content: center;
-  cursor: pointer;
-  gap: 0.5rem;
-  line-height: 1;
   background-color: white;
-  font-size: 15px;
-  color: black;
-  padding-left: 1rem /* 16px */;
-  padding-right: 1rem /* 16px */;
-  border-radius: 2px;
-  height: 45px;
-  align-items: center;
   display: flex;
-  user-select: none;
-  font-weight: 500;
+  align-items: center;
+  color: black;
+  min-width: 175px;
+  gap: 0.5rem /* 8px */;
+  padding-top: 0.75rem /* 12px */;
+  padding-bottom: 0.75rem /* 12px */;
+  justify-content: center;
+  border-radius: 0.125rem /* 2px */;
+  cursor: pointer;
+  font-size: 0.875rem /* 14px */;
+  font-weight: 400;
+  min-height: 46px;
 }
 
 .github-button {
-  cursor: pointer;
-  border-width: 1px;
-  border-color: #343434;
-  gap: 0.5rem;
-  line-height: 1;
   background-color: #0d0d0d;
-  justify-content: center;
-  font-size: 15px;
-  color: white;
-  padding-left: 1rem /* 16px */;
-  padding-right: 1rem /* 16px */;
-  border-radius: 2px;
-  height: 48px;
-  align-items: center;
   display: flex;
-  user-select: none;
+  align-items: center;
+  color: white;
+  min-width: 175px;
+  gap: 0.5rem /* 8px */;
+  padding-top: 0.75rem /* 12px */;
+  padding-bottom: 0.75rem /* 12px */;
+  justify-content: center;
+  border-radius: 0.125rem /* 2px */;
+  cursor: pointer;
+  font-size: 0.875rem /* 14px */;
+  font-weight: 400;
+  border: solid 1px #343434;
+  min-height: 46px;
 }
 
 /**PROJECTS SECTION ________________________________________________*/
@@ -223,7 +223,7 @@
 .inactive {
   font-weight: 500;
   height: 40px;
-  font-size: 13.5px;
+  font-size: 14px;
   border-color: transparent;
   border-bottom-width: 2px;
   display: flex;
@@ -247,7 +247,7 @@
 .active {
   padding-bottom: 2px;
   height: 40px;
-  font-size: 13.5px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   border-bottom-width: 2px;
@@ -358,7 +358,7 @@
 
 .banner-subtitle {
   color: #646464;
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 0.5rem /* 8px */;
   text-wrap: balance;
 }
@@ -376,25 +376,26 @@
   border-radius: 0.125rem /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .pulse-container {
   display: flex;
   align-items: center;
-  gap: 0.5rem /* 8px */;
+  gap: 0.6rem /* 8px */;
   margin-top: 2rem /* 32px */;
   font-weight: 500;
   color: white;
 }
 
 .pulse {
-  height: 7px;
-  width: 7px;
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
   background-color: #00ff6a;
   animation: 1.5s pulse infinite ease-in-out;
   margin-left: 5px;
+  margin-top: 1px;
 }
 
 @keyframes pulse {
@@ -403,7 +404,7 @@
   }
 
   100% {
-    box-shadow: 0 0 0 4px #69ffa800;
+    box-shadow: 0 0 0 5px #69ffa800;
   }
 }
 

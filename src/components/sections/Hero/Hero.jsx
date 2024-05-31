@@ -5,14 +5,14 @@ import RenderImage from "@/components/utils/RenderImage";
 
 const Hero = () => {
   return (
-    <section className="pageSize sm:pt-20 pt-10 ">
+    <section className="pageSize ">
       <div className="grid lg:grid-cols-2 items-center sm:justify-start justify-center">
         <div>
           {/*//*________________________________________________________________________________*/}
-          <div className="title sm:text-[50px] text-[43px] sm:text-start text-center">
+          <div className="title sm:text-[48px] text-[42px] sm:text-start text-center">
             Explora mis
           </div>
-          <div className="title sm:text-[50px] text-[43px] sm:text-start text-center sm:mt-10 mt-9 ">
+          <div className="title sm:text-[48px] text-[42px] sm:text-start text-center sm:mt-10 mt-9 ">
             últimos trabajos
           </div>
           <div className="subtitle sm:pt-8 pt-6 sm:text-start text-center">
@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
             <div className="github-button hover:bg-[#343434]">
               <Github />
-              <span className="text-sm">Github</span>
+              <span className="text-sm">Perfil de Github</span>
             </div>
           </div>
         </div>

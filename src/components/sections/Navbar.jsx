@@ -7,12 +7,12 @@ import Menu from "./Menu";
 
 const Navbar = () => {
   return (
-    <section className="navbar-bg">
+    <section className="navbar-bg hidden">
       <div className="navbar-container pageSize">
         {/*//*________________________________________________________________________________*/}
-        <div className="lg:flex hidden items-center">
+        <div className="hidden items-center">
           <div className="navbar-content">
-            <div className="text-lg font-semibold">Portafolio</div>
+            <div className="text-[20px] font-semibold">Portafolio</div>
             <div className="sec divider">
               <Send />
               <span> Correo Electrónico</span>
@@ -32,7 +32,7 @@ const Navbar = () => {
         {/*//*________________________________________________________________________________*/}
         <div className="lg:hidden flex items-center justify-between w-full">
           <div className="sm:hidden block"></div>
-          <div className="sm:block hidden text-lg font-medium">Portafolio</div>
+          <div className="sm:block hidden text-lg font-medium"></div>
           <div className="-mr-2">
             <Menu />
           </div>
