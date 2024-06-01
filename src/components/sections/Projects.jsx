@@ -34,8 +34,8 @@ const Projects = () => {
         }}
         className={
           name === currentFilter
-            ? "active sm:min-w-0 min-w-[90px]"
-            : "inactive sm:min-w-0 min-w-[90px]"
+            ? "active sm:min-w-0 min-w-[90px] texto"
+            : "inactive sm:min-w-0 min-w-[90px] texto"
         }
       >
         {icon}
@@ -103,7 +103,7 @@ const Projects = () => {
                     <AlertDialogCancel asChild>
                       <div
                         style={{ fontFamily: "Inter Variable, sans-serif" }}
-                        className=" flex gap-[2px] items-center text-[14px] font-medium w-fit cursor-pointer text-[#5b5b5b] hover:text-white leading-none mx-12 mt-9"
+                        className="volver hover:text-white"
                       >
                         <Back />
                         <span>Volver</span>

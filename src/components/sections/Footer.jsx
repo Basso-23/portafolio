@@ -76,8 +76,7 @@ const Footer = () => {
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
             <div className="pulse-container">
-              <div className="w-2 aspect-square rounded-full bg-[#0171F3]"></div>
-              <div className=" text-[#0171F3] ">Galería de proyectos.</div>
+              <div className="invisible">.</div>
             </div>
             <div className="social-container">
               <Links icon={<Send />} url={"www.google.com"} />
@@ -119,10 +118,11 @@ const Footer = () => {
             <div>©2024 CarlosBaso</div>
             <div
               style={{ marginTop: 0, justifyContent: "end" }}
-              className="pulse-container"
+              className="social-container"
             >
-              <div className="w-2 aspect-square rounded-full bg-[#0171F3]"></div>
-              <div className=" text-[#0171F3] ">Galería de proyectos.</div>
+              <Links icon={<Send />} url={"www.google.com"} />
+              <Links icon={<Github />} url={"www.google.com"} />
+              <Links icon={<Linkedin />} url={"www.google.com"} />
             </div>
           </div>
 

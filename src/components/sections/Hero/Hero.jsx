@@ -5,7 +5,7 @@ import RenderImage from "@/components/utils/RenderImage";
 
 const Hero = () => {
   return (
-    <section className="pageSize ">
+    <section className="pageSize">
       <div className="grid lg:grid-cols-2 items-center sm:justify-start justify-center">
         <div>
           {/*//*________________________________________________________________________________*/}
@@ -24,11 +24,11 @@ const Hero = () => {
           <div className="buttons-container sm:grid-cols-2 grid-cols-1 sm:mx-0 mx-auto">
             <div className="correo-button hover:bg-[#d1d1d1]">
               <Send />
-              <span className="text-sm">Correo Electrónico</span>
+              <span>Correo Electrónico</span>
             </div>
             <div className="github-button hover:bg-[#343434]">
               <Github />
-              <span className="text-sm">Perfil de Github</span>
+              <span>Github</span>
             </div>
           </div>
         </div>

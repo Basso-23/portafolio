@@ -58,98 +58,10 @@
   }
 }
 
-/**NAVBAR SECTION ________________________________________________*/
-
-.navbar-bg {
-  z-index: 30;
-  width: 100%;
-  height: 62px;
-  position: absolute;
-}
-
-.navbar-container {
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-  display: flex;
-}
-
-.navbar-content {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  font-size: 13.5px;
-  line-height: 1;
-}
-
-.sec {
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-  color: #838586;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.sec:hover {
-  color: white;
-}
-
-.divider {
-  border-left-width: 1px;
-  padding-left: 1.5rem;
-  border-color: #2b2b2b;
-}
-
-/**MENU SECTION ________________________________________________*/
-
-.menu-container {
-  position: absolute;
-  width: 200px;
-  top: 0px;
-  right: 8px;
-  margin-top: 55px;
-  background-color: #08090a;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.25rem /* 2px */;
+.texto {
   overflow: hidden;
-  border-width: 1px;
-  border-color: #27272a;
-}
-
-.option {
-  font-size: 0.875rem /* 14px */;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem /* 8px */;
-  padding: 12px;
-  cursor: pointer;
-  user-select: none;
-  color: white;
-  border-radius: 2px;
-  margin: 2px 4px;
-}
-
-.option:hover {
-  background-color: #27272a;
-}
-
-.option-title {
-  font-size: 0.875rem /* 14px */;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem /* 8px */;
-  padding: 12px;
-  user-select: none;
-  color: white;
-  font-weight: 500;
-  border-bottom-width: 1px;
-  border-color: #27272a;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /**HERO SECTION ________________________________________________*/
@@ -221,7 +133,6 @@
 }
 
 .inactive {
-  font-weight: 500;
   height: 40px;
   font-size: 14px;
   border-color: transparent;
@@ -329,6 +240,20 @@
   line-height: 1;
   color: black;
   border-radius: 0.125rem;
+}
+
+.volver {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  font-size: 14px;
+  width: fit-content;
+  color: #5b5b5b;
+  line-height: 1;
+  margin-left: 3rem /* 48px */;
+  margin-right: 3rem /* 48px */;
+  margin-top: 2.25rem /* 36px */;
+  cursor: pointer;
 }
 
 /**FOOTER SECTION ________________________________________________*/
