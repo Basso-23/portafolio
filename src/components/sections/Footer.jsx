@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Download from "@/icons/Download";
 import Github from "@/icons/Github";
 import Linkedin from "@/icons/Linkedin";
 import Send from "@/icons/Send";
@@ -79,9 +78,9 @@ const Footer = () => {
               <div className="invisible">.</div>
             </div>
             <div className="social-container">
-              <Links icon={<Send />} url={"www.google.com"} />
-              <Links icon={<Github />} url={"www.google.com"} />
-              <Links icon={<Linkedin />} url={"www.google.com"} />
+              <Links icon={<Send />} url={"https://www.google.com/"} />
+              <Links icon={<Github />} url={"https://www.google.com/"} />
+              <Links icon={<Linkedin />} url={"https://www.google.com/"} />
             </div>
           </div>
 
@@ -105,10 +104,10 @@ const Footer = () => {
 
           <div className="job-container">
             <div className="font-medium">Historial Laboral</div>
-            <Job name={"Hong Kong Smart"} url={"www.google.com"} />
-            <Job name={"Realizando Metas"} url={"www.google.com"} />
-            <Job name={"Partido Alianza"} url={"www.google.com"} />
-            <Job name={"PAYÁ"} url={"www.google.com"} />
+            <Job name={"Hong Kong Smart"} url={"https://www.google.com/"} />
+            <Job name={"Realizando Metas"} url={"https://www.google.com/"} />
+            <Job name={"Partido Alianza"} url={"https://www.google.com/"} />
+            <Job name={"PAYÁ"} url={"https://www.google.com/"} />
           </div>
         </div>
 
@@ -120,9 +119,9 @@ const Footer = () => {
               style={{ marginTop: 0, justifyContent: "end" }}
               className="social-container"
             >
-              <Links icon={<Send />} url={"www.google.com"} />
-              <Links icon={<Github />} url={"www.google.com"} />
-              <Links icon={<Linkedin />} url={"www.google.com"} />
+              <Links icon={<Send />} url={"https://www.google.com/"} />
+              <Links icon={<Github />} url={"https://www.google.com/"} />
+              <Links icon={<Linkedin />} url={"https://www.google.com/"} />
             </div>
           </div>
 
@@ -152,10 +151,19 @@ const Footer = () => {
               <AccordionTrigger>Historial Laboral</AccordionTrigger>
               <AccordionContent asChild>
                 <div className="job-mobile">
-                  <Job name={"Hong Kong Smart"} url={"www.google.com"} />
-                  <Job name={"Realizando Metas"} url={"www.google.com"} />
-                  <Job name={"Partido Alianza"} url={"www.google.com"} />
-                  <Job name={"PAYÁ"} url={"www.google.com"} />
+                  <Job
+                    name={"Hong Kong Smart"}
+                    url={"https://www.google.com/"}
+                  />
+                  <Job
+                    name={"Realizando Metas"}
+                    url={"https://www.google.com/"}
+                  />
+                  <Job
+                    name={"Partido Alianza"}
+                    url={"https://www.google.com/"}
+                  />
+                  <Job name={"PAYÁ"} url={"https://www.google.com/"} />
                 </div>
               </AccordionContent>
             </AccordionItem>

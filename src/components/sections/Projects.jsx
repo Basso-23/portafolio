@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import Modal from "./Modal";
 import Back from "@/icons/Back";
+import { motion as m } from "framer-motion";
 
 const Projects = () => {
   const [currentFilter, setCurrentFilter] = useState("proyectos");
@@ -103,10 +104,13 @@ const Projects = () => {
                     <AlertDialogCancel asChild>
                       <div
                         style={{ fontFamily: "Inter Variable, sans-serif" }}
-                        className="volver hover:text-white"
+                        className="volver hover:text-white lg:pl-14 pl-4 lg:mt-9 mt-16"
                       >
-                        <Back />
-                        <span>Volver</span>
+                        <div className="lg:pb-0 pb-4">
+                          <Back />
+                        </div>
+
+                        <span className="lg:pb-0 pb-4">Volver</span>
                       </div>
                     </AlertDialogCancel>
                     <Modal project={tempKey} />
