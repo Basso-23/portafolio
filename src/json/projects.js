@@ -135,9 +135,9 @@ export const projects = [
       "</div>",
   },
   {
-    name: "Proyecto 6",
+    name: "Azuki",
     category: "diseño",
-    image: "https://i.imgur.com/c6v8oQX.jpeg ",
+    image: "https://i.imgur.com/lct7qth.jpeg",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
