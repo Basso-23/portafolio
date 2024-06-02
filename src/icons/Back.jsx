@@ -1,7 +1,7 @@
-import { MdArrowBack } from "react-icons/md";
+import { IoChevronBack } from "react-icons/io5";
 
 const Back = () => {
-  return <MdArrowBack />;
+  return <IoChevronBack />;
 };
 
 export default Back;

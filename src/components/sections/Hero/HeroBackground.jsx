@@ -15,7 +15,7 @@ export function HeroBackground() {
       </section>
 
       {/*//*________________________________________________________________________________*/}
-      <section className="sm:hidden block pt-[70px]">
+      <section className="sm:hidden block pt-[50px]">
         <Hero />
       </section>
     </>

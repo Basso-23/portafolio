@@ -76,7 +76,7 @@ const Footer = () => {
               }
               className="banner-download hover:bg-[#d1d1d1] text-[#222222] lg:mt-[16px] mt-6"
             >
-              <span>Ver Currículum</span> <Visit />
+              <span>Ver Currículum</span>
             </a>
           </div>
         </div>

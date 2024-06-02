@@ -18,7 +18,8 @@ import {
 } from "@/components/ui/alert-dialog";
 import Modal from "./Modal";
 import Back from "@/icons/Back";
-import { motion as m } from "framer-motion";
+import { motion as m, AnimatePresence } from "framer-motion";
+import $ from "jquery";
 
 const Projects = () => {
   const [currentFilter, setCurrentFilter] = useState("proyectos");
@@ -35,8 +36,8 @@ const Projects = () => {
         }}
         className={
           name === currentFilter
-            ? "active sm:min-w-0 min-w-[90px] texto"
-            : "inactive sm:min-w-0 min-w-[90px] texto"
+            ? "active sm:min-w-0 min-w-[90px] texto "
+            : "inactive sm:min-w-0 min-w-[90px] texto link link--metis"
         }
       >
         {icon}
@@ -57,72 +58,101 @@ const Projects = () => {
   };
 
   return (
-    <section className="pageSize min-h-[90svh] sm:mt-20 mt-10 pb-3">
+    <section className="pageSize min-h-[675px] sm:mt-20 mt-10 pb-20">
       {/*//*________________________________________________________________________________*/}
-      <div className="filter-container sm:gap-[30px] gap-[12px]">
+      <m.div
+        initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{
+          duration: 1.2,
+          ease: "easeOut",
+          type: "spring",
+          delay: 0.15,
+        }}
+        className="filter-container sm:gap-[30px] gap-[12px] overflow-y-hidden"
+      >
         <Filter name={"proyectos"} icon={<All />} />
         <Filter name={"diseño"} icon={<Design />} />
         <Filter name={"full-stack"} icon={<Stack />} />
         <Filter name={"otros"} icon={<Toolbox />} />
-      </div>
+      </m.div>
 
       {/*//*________________________________________________________________________________*/}
-      <div className="grid-container">
-        {data
-          .map((item, index) => (
-            <div key={index} className="project-container">
-              <AlertDialog>
-                <AlertDialogTrigger asChild>
-                  <div onClick={() => setTempKey(item.name)}>
-                    <RenderImage url={item.image} />
-                  </div>
-                </AlertDialogTrigger>
-                <div className="info">
-                  <div>{item.name}</div>
-                  <div className="icons-container">
-                    <AlertDialogTrigger asChild>
-                      <div
-                        onClick={() => setTempKey(item.name)}
-                        className="tooltip-container"
-                      >
-                        <div className="tooltip fixedCenterX w-[65px]">
-                          Más info
+      <AnimatePresence>
+        <m.div
+          initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          exit={{
+            opacity: 0,
+            y: 50,
+            filter: "blur(5px)",
+            transition: { duration: 0.15 },
+          }}
+          transition={{
+            duration: 1.2,
+            ease: "easeOut",
+            type: "spring",
+            delay: 0.25,
+          }}
+          className="grid-container"
+          key={currentFilter}
+        >
+          {data
+            .map((item, index) => (
+              <div key={index} className="project-container">
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    <div onClick={() => setTempKey(item.name)}>
+                      <RenderImage url={item.image} />
+                    </div>
+                  </AlertDialogTrigger>
+                  <div className="info">
+                    <div>{item.name}</div>
+                    <div className="icons-container">
+                      <AlertDialogTrigger asChild>
+                        <div
+                          onClick={() => setTempKey(item.name)}
+                          className="tooltip-container"
+                        >
+                          <div className="tooltip fixedCenterX w-[65px]">
+                            Más info
+                          </div>
+                          <Plus />
                         </div>
-                        <Plus />
+                      </AlertDialogTrigger>
+                      <div className="tooltip-container">
+                        <div className="tooltip fixedCenterX w-[80px]">
+                          Visitar sitio
+                        </div>
+                        <a target="_blank" href={item.url}>
+                          <Visit />
+                        </a>
                       </div>
-                    </AlertDialogTrigger>
-                    <div className="tooltip-container">
-                      <div className="tooltip fixedCenterX w-[80px]">
-                        Visitar sitio
-                      </div>
-                      <a target="_blank" href={item.url}>
-                        <Visit />
-                      </a>
                     </div>
                   </div>
-                </div>
-                <AlertDialogContent asChild>
-                  <div>
-                    <AlertDialogCancel asChild>
-                      <div
-                        style={{ fontFamily: "Inter Variable, sans-serif" }}
-                        className="volver hover:text-white lg:pl-14 pl-4 lg:mt-9 mt-16"
-                      >
-                        <div className="lg:pb-0 pb-4">
-                          <Back />
-                        </div>
+                  <AlertDialogContent asChild>
+                    <div>
+                      <AlertDialogCancel asChild>
+                        <div
+                          style={{ fontFamily: "Inter Variable, sans-serif" }}
+                          className="volver hover:text-white lg:pl-14 pl-4 lg:mt-9 mt-16"
+                        >
+                          <div className="lg:pb-0 pb-4">
+                            <Back />
+                          </div>
 
-                        <span className="lg:pb-0 pb-4">Volver</span>
-                      </div>
-                    </AlertDialogCancel>
-                    <Modal project={tempKey} />
-                  </div>
-                </AlertDialogContent>
-              </AlertDialog>
-            </div>
-          ))
-          .reverse()}
-      </div>
+                          <span className="lg:pb-0 pb-4">Volver</span>
+                        </div>
+                      </AlertDialogCancel>
+                      <Modal project={tempKey} />
+                    </div>
+                  </AlertDialogContent>
+                </AlertDialog>
+              </div>
+            ))
+            .reverse()}
+        </m.div>
+      </AnimatePresence>
     </section>
   );
 };

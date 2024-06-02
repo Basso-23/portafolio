@@ -108,7 +108,7 @@
   padding-top: 0.75rem /* 12px */;
   padding-bottom: 0.75rem /* 12px */;
   justify-content: center;
-  border-radius: 0.125rem /* 2px */;
+  border-radius: 0.2rem /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
   font-weight: 400;
@@ -126,7 +126,7 @@
   padding-top: 0.75rem /* 12px */;
   padding-bottom: 0.75rem /* 12px */;
   justify-content: center;
-  border-radius: 0.125rem /* 2px */;
+  border-radius: 0.2rem /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
   font-weight: 400;
@@ -149,7 +149,6 @@
   border-bottom-width: 2px;
   display: flex;
   align-items: center;
-  border-radius: 0.125rem;
   padding-left: 2px;
   padding-right: 2px;
   justify-content: center;
@@ -166,8 +165,8 @@
 }
 
 .active {
-  padding-bottom: 2px;
-  height: 40px;
+  padding-bottom: 0px;
+  height: 38px;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -204,7 +203,7 @@
 .info {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 0.75rem;
   color: #838586;
   transition-property: all;
@@ -249,7 +248,7 @@
   text-align: center;
   line-height: 1;
   color: black;
-  border-radius: 0.125rem;
+  border-radius: 0.2rem;
 }
 
 .volver {
@@ -305,7 +304,7 @@
   padding-top: 0.75rem /* 12px */;
   padding-bottom: 0.75rem /* 12px */;
   justify-content: center;
-  border-radius: 0.125rem /* 2px */;
+  border-radius: 0.2rem /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
   font-weight: 400;
@@ -321,8 +320,8 @@
 }
 
 .pulse {
-  height: 8px;
-  width: 8px;
+  height: 6px;
+  width: 6px;
   border-radius: 50%;
   background-color: #00ff6a;
   animation: 1.5s pulse infinite ease-in-out;
@@ -432,7 +431,7 @@
 
 .modal-summary {
   margin-top: 1.5rem /* 24px */;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .modal-info {
@@ -479,7 +478,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  border-radius: 0.125rem /* 2px */;
+  border-radius: 0.2rem /* 2px */;
   cursor: pointer;
   line-height: 1;
 }
@@ -494,7 +493,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  border-radius: 0.125rem /* 2px */;
+  border-radius: 0.2rem /* 2px */;
   cursor: pointer;
   line-height: 1;
   color: white;
@@ -539,7 +538,7 @@
 .h1-content p {
   letter-spacing: -0.025em;
   text-wrap: pretty;
-  font-size: 15px;
+  font-size: 14px;
   color: #a1a1a1;
 }
 .h1-content a {
@@ -616,7 +615,7 @@
   background-size: cover;
   background-position: top;
   cursor: pointer;
-  border-radius: 0.125rem;
+  border-radius: 0.2rem;
   border-width: 1px;
   border-color: #242424;
   width: 100%;
@@ -636,4 +635,40 @@
   to {
     transform: rotate(1turn);
   }
+}
+
+/**UNDERLINE HOVER ________________________________________________*/
+
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1.9px;
+  box-shadow: 0px 0px 10px white, 0px 0px 20px white;
+  background: white;
+  top: 96%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: "";
+  /* show by default */
+}
+
+.link--metis::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
 }
