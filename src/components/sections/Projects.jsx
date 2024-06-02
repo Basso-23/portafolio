@@ -64,7 +64,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{
-          duration: 1.2,
+          duration: 1.3,
           ease: "easeOut",
           type: "spring",
           delay: 0.15,
@@ -89,7 +89,7 @@ const Projects = () => {
             transition: { duration: 0.15 },
           }}
           transition={{
-            duration: 1.2,
+            duration: 1.3,
             ease: "easeOut",
             type: "spring",
             delay: 0.25,
