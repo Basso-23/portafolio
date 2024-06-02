@@ -53,7 +53,6 @@ const Footer = () => {
   return (
     <section className="sm:mt-20 mt-10 footer">
       <div className="pageSize">
-        {/*//*________________________________________________________________________________*/}
         <div className="banner-container lg:grid-cols-2 grid-cols-1 lg:items-start items-center lg:py-14 py-10 lg:px-10 px-6">
           <div>
             <div className="banner-title lg:text-start text-center">
@@ -70,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/*//*________________________________________________________________________________*/}
+        {/*//*DESKTOP/////////////////////////////////////////////////////////////////////////////*/}
         <div className="text-sm mt-20 lg:flex hidden">
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
@@ -111,7 +110,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/*//*________________________________________________________________________________*/}
+        {/*//*MOBILE/////////////////////////////////////////////////////////////////////////////*/}
         <div className="lg:hidden block">
           <div className="footer-mobile">
             <div>©2024 CarlosBaso</div>

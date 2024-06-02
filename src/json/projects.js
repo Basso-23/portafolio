@@ -27,7 +27,7 @@ export const projects = [
       "</div>",
   },
   {
-    name: "Descripción General ",
+    name: "Proyecto 2",
     category: "otros",
     image: "https://i.imgur.com/c6v8oQX.jpeg ",
     url: "https://portfolio-v2-three-woad.vercel.app/",

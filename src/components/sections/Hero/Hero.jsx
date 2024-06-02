@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="buttons-container sm:grid-cols-2 grid-cols-1 sm:mx-0 mx-auto">
             <div className="correo-button hover:bg-[#d1d1d1]">
               <Send />
-              <span>Correo Electrónico</span>
+              <span>Correo electrónico</span>
             </div>
             <div className="github-button hover:bg-[#343434]">
               <Github />
