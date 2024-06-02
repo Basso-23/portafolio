@@ -81,14 +81,22 @@ const Modal = ({ project }) => {
 
                 <div className="left-end">
                   <div className="modal-buttons-container">
-                    <div className="modal-visit hover:bg-[#d1d1d1]">
+                    <a
+                      target="_blank"
+                      href={item.url}
+                      className="modal-visit hover:bg-[#d1d1d1]"
+                    >
                       <span> Visitar sitio</span>
                       <Visit />
-                    </div>
-                    <div className="modal-github hover:bg-[#343434]">
+                    </a>
+                    <a
+                      target="_blank"
+                      href={item.github}
+                      className="modal-github hover:bg-[#343434]"
+                    >
                       <Github />
                       <span>Código fuente</span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -123,14 +131,22 @@ const Modal = ({ project }) => {
                 style={{ marginTop: 24 }}
                 className="modal-buttons-container"
               >
-                <div className="modal-visit hover:bg-[#d1d1d1]">
+                <a
+                  target="_blank"
+                  href={item.url}
+                  className="modal-visit hover:bg-[#d1d1d1]"
+                >
                   <span> Visitar sitio</span>
                   <Visit />
-                </div>
-                <div className="modal-github hover:bg-[#343434]">
+                </a>
+                <a
+                  target="_blank"
+                  href={item.github}
+                  className="modal-github hover:bg-[#343434]"
+                >
                   <Github />
                   <span>Código fuente</span>
-                </div>
+                </a>
               </div>
 
               <div className="modal-info mt-4">

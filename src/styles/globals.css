@@ -64,6 +64,15 @@
   text-overflow: ellipsis;
 }
 
+@font-face {
+  font-family: inter;
+  src: url(../../public/Inter.ttf);
+}
+
+.inter {
+  font-family: inter;
+}
+
 /**HERO SECTION ________________________________________________*/
 
 .title {
@@ -104,6 +113,7 @@
   font-size: 0.875rem /* 14px */;
   font-weight: 400;
   min-height: 46px;
+  user-select: none;
 }
 
 .github-button {

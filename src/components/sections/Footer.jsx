@@ -22,6 +22,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { toast } from "sonner";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Links = ({ icon, url }) => {
   return (
@@ -49,6 +51,10 @@ const Job = ({ name, url }) => {
   );
 };
 
+const handleToast = () => {
+  toast.success("Correo electrónico copiado exitosamente");
+};
+
 const Footer = () => {
   return (
     <section className="sm:mt-20 mt-10 footer">
@@ -63,9 +69,15 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full flex lg:justify-end justify-center">
-            <div className="banner-download hover:bg-[#d1d1d1] text-[#222222] lg:mt-[16px] mt-6">
+            <a
+              target="_blank"
+              href={
+                "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
+              }
+              className="banner-download hover:bg-[#d1d1d1] text-[#222222] lg:mt-[16px] mt-6"
+            >
               <span>Ver Currículum</span> <Visit />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -77,9 +89,21 @@ const Footer = () => {
               <div className="invisible">.</div>
             </div>
             <div className="social-container">
-              <Links icon={<Send />} url={"https://www.google.com/"} />
-              <Links icon={<Github />} url={"https://www.google.com/"} />
-              <Links icon={<Linkedin />} url={"https://www.google.com/"} />
+              <CopyToClipboard
+                text={"carlos.baso23@gmail.com"}
+                onCopy={() => {
+                  handleToast();
+                }}
+              >
+                <div className="hover:text-white cursor-pointer select-none">
+                  <Send />
+                </div>
+              </CopyToClipboard>
+              <Links icon={<Github />} url={"https://github.com/Basso-23"} />
+              <Links
+                icon={<Linkedin />}
+                url={"https://www.linkedin.com/in/carlosbaso/"}
+              />
             </div>
           </div>
 
@@ -103,10 +127,10 @@ const Footer = () => {
 
           <div className="job-container">
             <div className="font-medium">Historial Laboral</div>
-            <Job name={"Hong Kong Smart"} url={"https://www.google.com/"} />
-            <Job name={"Realizando Metas"} url={"https://www.google.com/"} />
-            <Job name={"Partido Alianza"} url={"https://www.google.com/"} />
-            <Job name={"PAYÁ"} url={"https://www.google.com/"} />
+            <Job name={"Hong Kong Smart"} url={"https://hkspos.com"} />
+            <Job name={"Realizando Metas"} url={"https://somosrmpa.com/"} />
+            <Job name={"Partido Alianza"} url={"https://partidoalianza.com/"} />
+            <Job name={"PAYÁ"} url={"https://pidepaya.com"} />
           </div>
         </div>
 
@@ -118,9 +142,21 @@ const Footer = () => {
               style={{ marginTop: 0, justifyContent: "end" }}
               className="social-container"
             >
-              <Links icon={<Send />} url={"https://www.google.com/"} />
-              <Links icon={<Github />} url={"https://www.google.com/"} />
-              <Links icon={<Linkedin />} url={"https://www.google.com/"} />
+              <CopyToClipboard
+                text={"carlos.baso23@gmail.com"}
+                onCopy={() => {
+                  handleToast();
+                }}
+              >
+                <div className="hover:text-white cursor-pointer select-none">
+                  <Send />
+                </div>
+              </CopyToClipboard>
+              <Links icon={<Github />} url={"https://github.com/Basso-23"} />
+              <Links
+                icon={<Linkedin />}
+                url={"https://www.linkedin.com/in/carlosbaso/"}
+              />
             </div>
           </div>
 
@@ -150,19 +186,16 @@ const Footer = () => {
               <AccordionTrigger>Historial Laboral</AccordionTrigger>
               <AccordionContent asChild>
                 <div className="job-mobile">
-                  <Job
-                    name={"Hong Kong Smart"}
-                    url={"https://www.google.com/"}
-                  />
+                  <Job name={"Hong Kong Smart"} url={"https://hkspos.com"} />
                   <Job
                     name={"Realizando Metas"}
-                    url={"https://www.google.com/"}
+                    url={"https://somosrmpa.com/"}
                   />
                   <Job
                     name={"Partido Alianza"}
-                    url={"https://www.google.com/"}
+                    url={"https://partidoalianza.com/"}
                   />
-                  <Job name={"PAYÁ"} url={"https://www.google.com/"} />
+                  <Job name={"PAYÁ"} url={"https://pidepaya.com"} />
                 </div>
               </AccordionContent>
             </AccordionItem>

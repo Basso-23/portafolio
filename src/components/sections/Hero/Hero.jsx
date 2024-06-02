@@ -2,8 +2,26 @@ import React, { useState, useEffect } from "react";
 import Send from "@/icons/Send";
 import Github from "@/icons/Github";
 import RenderImage from "@/components/utils/RenderImage";
+import { toast } from "sonner";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import "@fontsource-variable/inter";
+import { useAtom } from "jotai";
+import { originalAtom } from "@/atom";
 
 const Hero = () => {
+  const handleToast = () => {
+    toast.success("Correo electrónico copiado exitosamente");
+  };
+
+  const [originalData, setOriginalData] = useAtom(originalAtom);
+  const [randomName, setRandomName] = useState();
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * originalData.length);
+    const selectedProjectName = originalData[randomIndex].name;
+    setRandomName(selectedProjectName);
+  }, [originalData]);
+
   return (
     <section className="pageSize">
       <div className="grid lg:grid-cols-2 items-center sm:justify-start justify-center">
@@ -22,21 +40,36 @@ const Hero = () => {
 
           {/*//*________________________________________________________________________________*/}
           <div className="buttons-container sm:grid-cols-2 grid-cols-1 sm:mx-0 mx-auto">
-            <div className="correo-button hover:bg-[#d1d1d1]">
-              <Send />
-              <span>Correo electrónico</span>
-            </div>
-            <div className="github-button hover:bg-[#343434]">
+            <CopyToClipboard
+              text={"carlos.baso23@gmail.com"}
+              onCopy={() => {
+                handleToast();
+              }}
+            >
+              <div className="correo-button hover:bg-[#d1d1d1]">
+                <Send />
+                <span>Correo electrónico</span>
+              </div>
+            </CopyToClipboard>
+            <a
+              target="_blank"
+              href="https://github.com/Basso-23"
+              className="github-button hover:bg-[#343434]"
+            >
               <Github />
               <span>Github</span>
-            </div>
+            </a>
           </div>
         </div>
 
         {/*//*________________________________________________________________________________*/}
-        <div className="relative lg:block hidden">
-          <RenderImage url={"https://i.imgur.com/idov15P.jpeg"} />
-        </div>
+        {originalData
+          .filter((item) => item.name === randomName)
+          .map((item, index) => (
+            <div key={index} className="relative lg:block hidden">
+              <RenderImage url={item.image} />
+            </div>
+          ))}
       </div>
     </section>
   );

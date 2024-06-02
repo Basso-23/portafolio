@@ -95,7 +95,9 @@ const Projects = () => {
                       <div className="tooltip fixedCenterX w-[80px]">
                         Visitar sitio
                       </div>
-                      <Visit />
+                      <a target="_blank" href={item.url}>
+                        <Visit />
+                      </a>
                     </div>
                   </div>
                 </div>
