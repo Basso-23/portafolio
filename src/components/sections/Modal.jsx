@@ -86,7 +86,9 @@ const Modal = ({ project }) => {
                       href={item.url}
                       className="modal-visit hover:bg-[#d1d1d1]"
                     >
-                      <span> Visitar sitio</span>
+                      <span className=" text-[13.5px] font-medium">
+                        Visitar sitio
+                      </span>
                       <Visit />
                     </a>
                     <a
@@ -95,7 +97,9 @@ const Modal = ({ project }) => {
                       className="modal-github hover:bg-[#343434]"
                     >
                       <Github />
-                      <span>Código fuente</span>
+                      <span className=" text-[13.5px] font-medium">
+                        Código fuente
+                      </span>
                     </a>
                   </div>
                 </div>

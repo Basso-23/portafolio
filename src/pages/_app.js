@@ -5,7 +5,7 @@ import Head from "next/head";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <div style={{ fontFamily: "Inter Variable, sans-serif" }}>
+    <div className="inter">
       <Head>
         <title>Carlos Baso</title>
         <meta

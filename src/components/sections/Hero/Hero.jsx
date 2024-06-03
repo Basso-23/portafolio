@@ -23,13 +23,37 @@ const Hero = () => {
   };
 
   const [originalData, setOriginalData] = useAtom(originalAtom);
+  const [nameIndex, setNameIndex] = useState(originalData.length - 1);
   const [randomName, setRandomName] = useState();
 
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * originalData.length);
-    const selectedProjectName = originalData[randomIndex].name;
+    const selectedProjectName = originalData[nameIndex].name;
     setRandomName(selectedProjectName);
-  }, [originalData]);
+  }, [nameIndex]);
+
+  const siguiente = () => {
+    if (nameIndex === 0) {
+      setNameIndex(originalData.length - 1);
+    } else {
+      setNameIndex(nameIndex - 1);
+    }
+  };
+
+  const anterior = () => {
+    if (nameIndex === originalData.length - 1) {
+      setNameIndex(0);
+    } else {
+      setNameIndex(nameIndex + 1);
+    }
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      siguiente();
+    }, 20000);
+
+    return () => clearTimeout(timer); // Limpiar el timeout anterior cuando el efecto se vuelva a ejecutar
+  }, [nameIndex]);
 
   return (
     <section className="pageSize">
@@ -73,12 +97,22 @@ const Hero = () => {
             }}
             className="subtitle sm:pt-8 pt-6 sm:text-start text-center"
           >
-            ¡Bienvenido! Aquí encontrarás una selección de mis proyectos más
-            destacados.
+            ¡Bienvenido a mi portafolio! Aquí encontrarás una selección de mis
+            proyectos más destacados.
           </m.div>
 
           {/*//*________________________________________________________________________________*/}
-          <div className="buttons-container sm:grid-cols-2 grid-cols-1 sm:mx-0 mx-auto">
+          <m.div
+            initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{
+              duration: 1.3,
+              ease: "easeOut",
+              type: "spring",
+              delay: 0.1,
+            }}
+            className="buttons-container sm:grid-cols-2 grid-cols-1 sm:mx-0 mx-auto"
+          >
             <CopyToClipboard
               text={"carlos.baso23@gmail.com"}
               onCopy={() => {
@@ -87,7 +121,9 @@ const Hero = () => {
             >
               <div className="correo-button hover:bg-[#d1d1d1]">
                 <Send />
-                <span>Correo electrónico</span>
+                <span className=" text-[13.5px] font-medium">
+                  Correo electrónico
+                </span>
               </div>
             </CopyToClipboard>
             <a
@@ -96,12 +132,13 @@ const Hero = () => {
               className="github-button hover:bg-[#343434]"
             >
               <Github />
-              <span>Github</span>
+              <span className=" text-[13.5px] font-medium">Github</span>
             </a>
-          </div>
+          </m.div>
         </div>
 
         {/*//*________________________________________________________________________________*/}
+
         {originalData
           .filter((item) => item.name === randomName)
           .map((item, index) => (
@@ -119,10 +156,42 @@ const Hero = () => {
             >
               <AlertDialog>
                 <AlertDialogTrigger asChild>
-                  <div>
+                  <m.div
+                    initial={{ opacity: 0, x: -50, filter: "blur(5px)" }}
+                    animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                    transition={{
+                      duration: 1.5,
+                      ease: "easeOut",
+                      type: "spring",
+                      delay: 0,
+                    }}
+                    key={randomName}
+                  >
                     <RenderImage url={item.image} />
-                  </div>
+                  </m.div>
                 </AlertDialogTrigger>
+                <div className=" flex justify-between select-none absolute w-full mt-6 text-2xl">
+                  <div
+                    onClick={() => {
+                      anterior();
+                    }}
+                    className=" text-[#838586] hover:text-white cursor-pointer"
+                  >
+                    <Back />
+                  </div>
+                  <div
+                    onClick={() => {
+                      siguiente();
+                    }}
+                    className=" text-[#838586] hover:text-white cursor-pointer rotate-180"
+                  >
+                    <Back />
+                  </div>
+                </div>
+
+                <div className="container2 mt-9">
+                  <div key={randomName} className="loader2"></div>
+                </div>
                 <AlertDialogContent asChild>
                   <div>
                     <AlertDialogCancel asChild>

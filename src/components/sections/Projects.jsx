@@ -36,7 +36,7 @@ const Projects = () => {
         }}
         className={
           name === currentFilter
-            ? "active sm:min-w-0 min-w-[90px] texto "
+            ? "active sm:min-w-0 min-w-[90px] texto link"
             : "inactive sm:min-w-0 min-w-[90px] texto link link--metis"
         }
       >

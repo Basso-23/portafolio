@@ -76,7 +76,8 @@ const Footer = () => {
               }
               className="banner-download hover:bg-[#d1d1d1] text-[#222222] lg:mt-[16px] mt-6"
             >
-              <span>Ver Currículum</span>
+              <span className=" text-[13.5px] font-medium">Ver Currículum</span>
+              <Visit />
             </a>
           </div>
         </div>
