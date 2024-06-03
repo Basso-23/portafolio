@@ -24,6 +24,8 @@ import {
 } from "@/components/ui/accordion";
 import { toast } from "sonner";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { motion as m, AnimatePresence } from "framer-motion";
+import Cv from "@/icons/Cv";
 
 const Links = ({ icon, url }) => {
   return (
@@ -57,9 +59,19 @@ const handleToast = () => {
 
 const Footer = () => {
   return (
-    <section className="sm:mt-20 mt-10 footer">
-      <div className="pageSize">
-        <div className="banner-container lg:grid-cols-2 grid-cols-1 lg:items-start items-center lg:py-14 py-10 lg:px-10 px-6">
+    <section className="mt-32 footer 2xl:px-[85px] px-[16px]">
+      <m.div
+        initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{
+          duration: 1.3,
+          ease: "easeOut",
+          type: "spring",
+          delay: 0.25,
+        }}
+        className="pageSize max-w-[1400px] "
+      >
+        <div className="banner-containe lg:grid-cols-2 grid-cols-1 lg:items-start items-center lg:py-14 py-10 lg:px-10 px-6 hidden">
           <div>
             <div className="banner-title lg:text-start text-center">
               Descubre más sobre mí
@@ -74,16 +86,16 @@ const Footer = () => {
               href={
                 "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
               }
-              className="banner-download hover:bg-[#d1d1d1] text-[#222222] lg:mt-[16px] mt-6"
+              className="transition-all gap-1 rounded-smm bg-[#F47420] hover:bg-[#ff9249] w-fit h-[40px] flex justify-center items-center text-[16px] font-semibold text-black px-6 cursor-pointer select-none lg:mt-[16px] mt-6"
             >
-              <span className=" text-[13.5px] font-medium">Ver Currículum</span>
+              <span className=" text-[13px] uppercase">Ver Currículum</span>
               <Visit />
             </a>
           </div>
         </div>
 
         {/*//*DESKTOP/////////////////////////////////////////////////////////////////////////////*/}
-        <div className="text-sm mt-20 lg:flex hidden">
+        <div className="text-sm mt-20 lg:flex hidden py-16">
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
             <div className="pulse-container">
@@ -102,6 +114,12 @@ const Footer = () => {
               </CopyToClipboard>
               <Links icon={<Github />} url={"https://github.com/Basso-23"} />
               <Links
+                icon={<Cv />}
+                url={
+                  "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
+                }
+              />
+              <Links
                 icon={<Linkedin />}
                 url={"https://www.linkedin.com/in/carlosbaso/"}
               />
@@ -115,7 +133,7 @@ const Footer = () => {
             <Tech name={"Next JS"} icon={<Next />} />
             <Tech name={"Tailwind CSS"} icon={<Tailwind />} />
             <Tech name={"Shadcn/ui"} icon={<Shadcn />} />
-            <Tech name={"Aceternity UI"} icon={<Acernity />} />
+            <Tech name={"Framer Motion"} icon={<Acernity />} />
             <Tech name={"Astro"} icon={<Astro />} />
             <Tech name={"Firebase"} icon={<Firebase />} />
             <Tech name={"Git"} icon={<Git />} />
@@ -154,6 +172,13 @@ const Footer = () => {
                 </div>
               </CopyToClipboard>
               <Links icon={<Github />} url={"https://github.com/Basso-23"} />
+
+              <Links
+                icon={<Cv />}
+                url={
+                  "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
+                }
+              />
               <Links
                 icon={<Linkedin />}
                 url={"https://www.linkedin.com/in/carlosbaso/"}
@@ -171,7 +196,7 @@ const Footer = () => {
                   <Tech name={"Next JS"} icon={<Next />} />
                   <Tech name={"Tailwind CSS"} icon={<Tailwind />} />
                   <Tech name={"Shadcn/ui"} icon={<Shadcn />} />
-                  <Tech name={"Aceternity UI"} icon={<Acernity />} />
+                  <Tech name={"Framer Motion"} icon={<Acernity />} />
                   <Tech name={"Astro"} icon={<Astro />} />
                   <Tech name={"Firebase"} icon={<Firebase />} />
                   <Tech name={"Git"} icon={<Git />} />
@@ -202,7 +227,7 @@ const Footer = () => {
             </AccordionItem>
           </Accordion>
         </div>
-      </div>
+      </m.div>
     </section>
   );
 };

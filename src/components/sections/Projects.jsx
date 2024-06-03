@@ -19,7 +19,7 @@ import {
 import Modal from "./Modal";
 import Back from "@/icons/Back";
 import { motion as m, AnimatePresence } from "framer-motion";
-import $ from "jquery";
+import Footer from "./Footer";
 
 const Projects = () => {
   const [currentFilter, setCurrentFilter] = useState("proyectos");
@@ -36,8 +36,8 @@ const Projects = () => {
         }}
         className={
           name === currentFilter
-            ? "active sm:min-w-0 min-w-[90px] texto link"
-            : "inactive sm:min-w-0 min-w-[90px] texto link link--metis"
+            ? "active sm:min-w-0 min-w-[90px]"
+            : "inactive sm:min-w-0 min-w-[90px]"
         }
       >
         {icon}
@@ -58,7 +58,27 @@ const Projects = () => {
   };
 
   return (
-    <section className="pageSize min-h-[675px] sm:mt-20 mt-10 pb-20">
+    <section className="pageSize min-h-[675px] 2xl:mt-[-240px] z-50 absolute w-full">
+      <m.div
+        initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{
+          duration: 1.3,
+          ease: "easeOut",
+          type: "spring",
+          delay: 0.2,
+        }}
+        className="2xl:px-[85px] px-[16px]"
+      >
+        <div className=" text-white text-[28px] font-semibold">
+          Explora mis últimos trabajos
+        </div>
+        <div className="text-[#a0a0a0] text-[16px] font-medium pb-4 mt-1">
+          ¡Bienvenido a mi portafolio! Aquí encontrarás una selección de mis
+          proyectos más destacados.
+        </div>
+      </m.div>
+
       {/*//*________________________________________________________________________________*/}
       <m.div
         initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
@@ -69,7 +89,7 @@ const Projects = () => {
           type: "spring",
           delay: 0.15,
         }}
-        className="filter-container sm:gap-[30px] gap-[12px] overflow-y-hidden"
+        className="filter-containe hidden sm:gap-[30px] gap-[12px] overflow-y-hidden"
       >
         <Filter name={"proyectos"} icon={<All />} />
         <Filter name={"diseño"} icon={<Design />} />
@@ -92,9 +112,9 @@ const Projects = () => {
             duration: 1.3,
             ease: "easeOut",
             type: "spring",
-            delay: 0.25,
+            delay: 0.4,
           }}
-          className="grid-container"
+          className="grid-container 2xl:px-[85px] px-[16px]"
           key={currentFilter}
         >
           {data
@@ -153,6 +173,7 @@ const Projects = () => {
             .reverse()}
         </m.div>
       </AnimatePresence>
+      <Footer />
     </section>
   );
 };

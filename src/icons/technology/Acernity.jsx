@@ -1,7 +1,7 @@
-import { IoIosArrowForward } from "react-icons/io";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 const Acernity = () => {
-  return <IoIosArrowForward />;
+  return <TbBrandFramerMotion />;
 };
 
 export default Acernity;

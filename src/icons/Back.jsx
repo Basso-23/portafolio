@@ -1,7 +1,7 @@
-import { IoChevronBack } from "react-icons/io5";
+import { IoChevronBackSharp } from "react-icons/io5";
 
 const Back = () => {
-  return <IoChevronBack />;
+  return <IoChevronBackSharp />;
 };
 
 export default Back;

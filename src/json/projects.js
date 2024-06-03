@@ -2,12 +2,12 @@ export const projects = [
   {
     name: "Humankind",
     category: "diseño",
-    image: "https://i.imgur.com/E5n78A1.jpeg",
+    image: "https://i.imgur.com/DP7ePoc.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Astro", "Tailwind", "CSS", "HTML"],
     summary:
-      "Diseño para una tienda de donas para destacar su variedad de sabores únicos.",
+      "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +
@@ -34,7 +34,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
     summary:
-      "Diseño para una tienda de donas para destacar su variedad de sabores únicos.",
+      "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +
@@ -61,7 +61,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
     summary:
-      "Diseño para una tienda de donas para destacar su variedad de sabores únicos.",
+      "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +
@@ -88,7 +88,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
     summary:
-      "Diseño para una tienda de donas para destacar su variedad de sabores únicos.",
+      "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +
@@ -115,7 +115,7 @@ export const projects = [
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
     summary:
-      "Diseño para una tienda de donas para destacar su variedad de sabores únicos.",
+      "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +
@@ -137,12 +137,12 @@ export const projects = [
   {
     name: "Azuki",
     category: "diseño",
-    image: "https://i.imgur.com/lct7qth.jpeg",
+    image: "https://i.imgur.com/b3V5umX.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
     summary:
-      "Diseño para una tienda de donas para destacar su variedad de sabores únicos.",
+      "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +

@@ -3,20 +3,15 @@
 @tailwind utilities;
 
 :root {
-  background-color: #060a0e;
+  background-color: #010001;
   color: white;
 }
 
 .pageSize {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
 }
 
 @media (min-width: 640px) {
   .pageSize {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    max-width: 1390px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -117,7 +112,7 @@
   padding-top: 0.75rem /* 12px */;
   padding-bottom: 0.75rem /* 12px */;
   justify-content: center;
-  border-radius: 9999px /* 2px */;
+  border-radius: 0px /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
   font-weight: 400;
@@ -135,7 +130,7 @@
   padding-top: 0.75rem /* 12px */;
   padding-bottom: 0.75rem /* 12px */;
   justify-content: center;
-  border-radius: 9999px /* 2px */;
+  border-radius: 0px /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
   font-weight: 400;
@@ -152,41 +147,49 @@
 }
 
 .inactive {
-  height: 38px;
-  font-size: 13.5px;
+  height: 40px;
+  background-color: #c8fa32;
+  font-size: 13px;
   display: flex;
   align-items: center;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 1.5rem /* 24px */;
+  padding-right: 1.5rem /* 24px */;
   justify-content: center;
-  color: #838586;
-  text-transform: capitalize;
+  color: black;
+  text-transform: uppercase;
   gap: 0.5rem;
   cursor: pointer;
   user-select: none;
-  padding-bottom: 0px;
-  font-weight: 500;
+  border-radius: 0rem /* 2px */;
+  font-weight: 600;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  border: 2px solid transparent;
 }
 
 .inactive:hover {
-  color: white;
+  background-color: transparent;
+  border: 2px solid #c8fa32;
+  color: #c8fa32;
 }
 
 .active {
-  padding-bottom: 0px;
-  height: 38px;
-  font-size: 13.5px;
+  height: 40px;
+  border-radius: 0rem /* 2px */;
+  font-size: 13px;
   display: flex;
   align-items: center;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 1.5rem /* 24px */;
+  padding-right: 1.5rem /* 24px */;
   justify-content: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   gap: 0.5rem;
   pointer-events: none;
   user-select: none;
-  color: white;
-  font-weight: 500;
+  color: #c8fa32;
+  font-weight: 600;
+  border: 2px solid #c8fa32;
 }
 
 .grid-container {
@@ -217,6 +220,7 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  font-weight: 500;
 }
 
 .icons-container {
@@ -236,10 +240,6 @@
   transition-duration: 150ms;
 }
 
-.tooltip-container:hover {
-  color: white;
-}
-
 @media (min-width: 640px) {
   .tooltip-container:hover .tooltip {
     display: block;
@@ -250,13 +250,15 @@
   display: none;
   position: absolute;
   top: -2.5rem;
-  background-color: white;
+  background-color: rgb(38, 38, 38);
   padding: 0.5rem;
-  font-size: 11.5px;
+  font-size: 12px;
   text-align: center;
   line-height: 1;
-  color: black;
-  border-radius: 9999px;
+  color: white;
+  border-radius: 0px;
+  font-weight: 400;
+  letter-spacing: 0em;
 }
 
 .volver {
@@ -274,9 +276,7 @@
 /**FOOTER SECTION ________________________________________________*/
 
 .footer {
-  background-color: black;
-  padding-top: 70px;
-  padding-bottom: 2.5rem /* 40px */;
+  background-color: rgb(11, 11, 11);
 }
 
 .banner-container {
@@ -313,7 +313,7 @@
   padding-top: 0.75rem /* 12px */;
   padding-bottom: 0.75rem /* 12px */;
   justify-content: center;
-  border-radius: 9999px /* 2px */;
+  border-radius: 0px /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
   font-weight: 400;
@@ -487,7 +487,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  border-radius: 9999px /* 2px */;
+  border-radius: 0px /* 2px */;
   cursor: pointer;
   line-height: 1;
 }
@@ -502,7 +502,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  border-radius: 9999px /* 2px */;
+  border-radius: 0px /* 2px */;
   cursor: pointer;
   line-height: 1;
   color: white;
@@ -624,7 +624,7 @@
   background-size: cover;
   background-position: top;
   cursor: pointer;
-  border-radius: 0.2rem;
+  border-radius: 0rem;
   border-width: 1px;
   border-color: #242424;
   width: 100%;
@@ -683,20 +683,18 @@
 }
 
 .loader2 {
-  width: 15%;
+  width: 100%;
   height: 4px;
-  border-radius: 9999px;
-  background-color: rgb(24, 24, 24);
+
   position: absolute;
 }
 
 .loader2::before {
   content: "";
   position: absolute;
-  background-color: rgb(233, 233, 233);
+  background-color: #f5722100;
   width: 0%;
   height: 100%;
-  border-radius: 9999px;
   animation: load 20s linear infinite;
 }
 
@@ -705,12 +703,18 @@
 }
 
 .container2 {
-  display: flex;
-  justify-content: center;
 }
 
 @keyframes load {
   100% {
     width: 100%;
   }
+}
+
+.bannerShadowBot {
+  background: linear-gradient(360deg, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0) 75%);
+}
+
+.bannerShadowLeft {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
 }

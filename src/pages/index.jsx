@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Projects from "@/components/sections/Projects";
-import { HeroBackground } from "@/components/sections/Hero/HeroBackground";
 import Footer from "@/components/sections/Footer";
+import Hero from "@/components/sections/Hero";
 
 const Home = () => {
   return (
-    <main className="tracking-[-0.02rem]">
-      <HeroBackground />
+    <main className="tracking-[-0.01rem]">
+      <Hero />
       <Projects />
-      <Footer />
     </main>
   );
 };
