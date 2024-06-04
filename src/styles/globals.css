@@ -220,123 +220,6 @@
   font-weight: 500;
 }
 
-/**FOOTER SECTION ________________________________________________*/
-
-.f-section {
-  background-color: rgb(11, 11, 11);
-  margin-top: 8rem;
-}
-
-.f-desktop {
-  font-size: 0.875rem;
-  margin-top: 5rem;
-  padding-top: 3.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.f-container {
-  max-width: 1400px;
-  margin: auto;
-}
-
-.pulse-container {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem /* 8px */;
-  margin-top: 2rem /* 32px */;
-  font-weight: 500;
-  color: white;
-}
-
-.pulse {
-  height: 6.5px;
-  width: 6.5px;
-  border-radius: 50%;
-  background-color: #00ff6a;
-  animation: 1.5s pulse infinite ease-in-out;
-  margin-left: 5px;
-  margin-top: 1px;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 #00ff6a;
-  }
-
-  100% {
-    box-shadow: 0 0 0 5px #69ffa800;
-  }
-}
-
-.social-container {
-  display: flex;
-  align-items: center;
-  margin-top: 3.5rem /* 56px */;
-  gap: 0.8rem /* 16px */;
-  font-size: 1.25rem /* 20px */;
-}
-
-.tech-container {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem /* 12px */;
-
-  width: 55%;
-  color: white;
-}
-
-.tech-content {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem /* 8px */;
-  line-height: 1;
-  color: #838586;
-}
-
-.job-container {
-  width: 20%;
-  color: white;
-  gap: 0.75rem /* 12px */;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  display: grid;
-}
-
-.job-content {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem /* 8px */;
-  line-height: 1;
-  cursor: pointer;
-  color: #838586;
-}
-
-.f-mobile {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.f-header {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  font-size: 0.875rem /* 14px */;
-  color: #a7a7a7;
-  padding-bottom: 1.5rem;
-}
-
-.tech-mobile {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem /* 20px */;
-  color: #838586;
-}
-
-.job-mobile {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1.25rem /* 20px */;
-  color: #838586;
-}
-
 /**MODAL ________________________________________________*/
 
 .modal-container {
@@ -542,7 +425,95 @@
   font-size: 16px;
 }
 
-/**RENDER IMAGE ________________________________________________*/
+/**FOOTER ________________________________________________*/
+
+.f-section {
+  background-color: rgb(11, 11, 11);
+  margin-top: 8rem;
+}
+
+.f-desktop {
+  font-size: 0.875rem;
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.f-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3.5rem /* 56px */;
+  gap: 0.8rem /* 16px */;
+  font-size: 1.25rem /* 20px */;
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem /* 12px */;
+
+  width: 55%;
+  color: white;
+}
+
+.tech-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem /* 8px */;
+  line-height: 1;
+  color: #838586;
+}
+
+.job-container {
+  width: 20%;
+  color: white;
+  gap: 0.75rem /* 12px */;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  display: grid;
+}
+
+.job-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem /* 8px */;
+  line-height: 1;
+  cursor: pointer;
+  color: #838586;
+}
+
+.f-mobile {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.f-header {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-size: 0.875rem /* 14px */;
+  color: #a7a7a7;
+  padding-bottom: 1.5rem;
+}
+
+.tech-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem /* 20px */;
+  color: #838586;
+}
+
+.job-mobile {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem /* 20px */;
+  color: #838586;
+}
+
+/**UTILS ________________________________________________*/
 
 .image {
   aspect-ratio: 16 / 9;
@@ -569,5 +540,34 @@
 @keyframes l2 {
   to {
     transform: rotate(1turn);
+  }
+}
+
+.pulse-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem /* 8px */;
+  margin-top: 2rem /* 32px */;
+  font-weight: 500;
+  color: white;
+}
+
+.pulse {
+  height: 6.5px;
+  width: 6.5px;
+  border-radius: 50%;
+  background-color: #00ff6a;
+  animation: 1.5s pulse infinite ease-in-out;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #00ff6a;
+  }
+
+  100% {
+    box-shadow: 0 0 0 5px #69ffa800;
   }
 }

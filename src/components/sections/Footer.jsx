@@ -25,7 +25,7 @@ import {
 } from "@/components/ui/accordion";
 import { toast } from "sonner";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { motion as m, AnimatePresence } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 const Links = ({ icon, url }) => {
   return (
@@ -72,13 +72,13 @@ const Footer = () => {
         className="f-container"
       >
         {/*//*DESKTOP/////////////////////////////////////////////////////////////////////////////*/}
-        <div className="f-desktop lg:flex hidden ">
+        <div className="f-desktop lg:flex hidden">
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
-            <div className="pulse-container relative">
+            <div className="pulse-container">
               <div className="invisible"></div>
             </div>
-            <div className="social-container">
+            <div className="links-container">
               <CopyToClipboard
                 text={"carlos.baso23@gmail.com"}
                 onCopy={() => {
@@ -91,14 +91,14 @@ const Footer = () => {
               </CopyToClipboard>
               <Links icon={<Github />} url={"https://github.com/Basso-23"} />
               <Links
+                icon={<Linkedin />}
+                url={"https://www.linkedin.com/in/carlosbaso/"}
+              />
+              <Links
                 icon={<Resume />}
                 url={
                   "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
                 }
-              />
-              <Links
-                icon={<Linkedin />}
-                url={"https://www.linkedin.com/in/carlosbaso/"}
               />
             </div>
           </div>
@@ -136,7 +136,7 @@ const Footer = () => {
             <div>©2024 CarlosBaso</div>
             <div
               style={{ marginTop: 0, justifyContent: "end" }}
-              className="social-container"
+              className="links-container"
             >
               <CopyToClipboard
                 text={"carlos.baso23@gmail.com"}
@@ -149,16 +149,15 @@ const Footer = () => {
                 </div>
               </CopyToClipboard>
               <Links icon={<Github />} url={"https://github.com/Basso-23"} />
-
+              <Links
+                icon={<Linkedin />}
+                url={"https://www.linkedin.com/in/carlosbaso/"}
+              />
               <Links
                 icon={<Resume />}
                 url={
                   "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
                 }
-              />
-              <Links
-                icon={<Linkedin />}
-                url={"https://www.linkedin.com/in/carlosbaso/"}
               />
             </div>
           </div>
