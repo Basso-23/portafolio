@@ -75,8 +75,8 @@ const Footer = () => {
         <div className="f-desktop lg:flex hidden ">
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
-            <div className="pulse-container">
-              <div className="invisible">.</div>
+            <div className="pulse-container relative">
+              <div className="invisible"></div>
             </div>
             <div className="social-container">
               <CopyToClipboard

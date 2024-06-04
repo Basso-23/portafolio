@@ -72,11 +72,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="pageSize min-h-[850px]">
+    <section className="pageSize min-h-[800px]">
       {originalData
         .filter((item) => item.name === randomName)
         .map((item, index) => (
-          <div key={index} className="z-40 ">
+          <div key={index} className="z-40 flex justify-end">
             <m.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -90,7 +90,7 @@ const Hero = () => {
               style={{
                 backgroundImage: `url(${item.image})`,
               }}
-              className="w-[100%] max-h-[850px] aspect-video bg-right bg-no-repeat bg-cover relative 2xl:block hidden"
+              className="w-[75%] max-h-[850px] aspect-video bg-center bg-no-repeat bg-cover relative 2xl:block hidden"
             >
               <div className=" w-full h-full bottom-0 bannerShadowBot absolute"></div>
             </m.div>

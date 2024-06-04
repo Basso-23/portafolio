@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Humankind",
     category: "diseño",
-    image: "https://i.imgur.com/DP7ePoc.png",
+    image: "https://i.imgur.com/KN8GEvV.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Astro", "Tailwind", "CSS", "HTML"],
@@ -29,7 +29,7 @@ export const projects = [
   {
     name: "Proyecto 2",
     category: "full-stack",
-    image: "https://i.imgur.com/c6v8oQX.jpeg ",
+    image: "https://i.imgur.com/GkIhsP0.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
@@ -56,7 +56,7 @@ export const projects = [
   {
     name: "Proyecto 3",
     category: "otros",
-    image: "https://i.imgur.com/c6v8oQX.jpeg ",
+    image: "https://i.imgur.com/GkIhsP0.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
@@ -83,7 +83,7 @@ export const projects = [
   {
     name: "Proyecto 4",
     category: "full-stack",
-    image: "https://i.imgur.com/c6v8oQX.jpeg ",
+    image: "https://i.imgur.com/GkIhsP0.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
@@ -110,7 +110,7 @@ export const projects = [
   {
     name: "Proyecto 5",
     category: "otros",
-    image: "https://i.imgur.com/c6v8oQX.jpeg ",
+    image: "https://i.imgur.com/GkIhsP0.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
@@ -137,7 +137,7 @@ export const projects = [
   {
     name: "Azuki",
     category: "diseño",
-    image: "https://i.imgur.com/b3V5umX.png",
+    image: "https://i.imgur.com/uLJMDzq.png",
     url: "https://portfolio-v2-three-woad.vercel.app/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Next", "React", "Tailwind", "Javascript"],
