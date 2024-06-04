@@ -16,6 +16,7 @@ import NodeJS from "@/icons/technology/NodeJS";
 import React_logo from "@/icons/technology/React";
 import Shadcn from "@/icons/technology/Shadcn";
 import Tailwind from "@/icons/technology/Tailwind";
+import Cv from "@/icons/Cv";
 import {
   Accordion,
   AccordionContent,
@@ -25,7 +26,6 @@ import {
 import { toast } from "sonner";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { motion as m, AnimatePresence } from "framer-motion";
-import Cv from "@/icons/Cv";
 
 const Links = ({ icon, url }) => {
   return (
@@ -59,7 +59,7 @@ const handleToast = () => {
 
 const Footer = () => {
   return (
-    <section className="mt-32 footer 2xl:px-[85px] px-[16px]">
+    <section className="f-section 2xl:px-[85px] sm:px-[40px] px-[12px]">
       <m.div
         initial={{ opacity: 0, y: 50, filter: "blur(5px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -69,33 +69,10 @@ const Footer = () => {
           type: "spring",
           delay: 0.25,
         }}
-        className="pageSize max-w-[1400px] "
+        className="f-container"
       >
-        <div className="banner-containe lg:grid-cols-2 grid-cols-1 lg:items-start items-center lg:py-14 py-10 lg:px-10 px-6 hidden">
-          <div>
-            <div className="banner-title lg:text-start text-center">
-              Descubre más sobre mí
-            </div>
-            <div className="banner-subtitle lg:text-start text-center">
-              Conoce mi trayectoria y mis diversas aptitudes.
-            </div>
-          </div>
-          <div className="w-full flex lg:justify-end justify-center">
-            <a
-              target="_blank"
-              href={
-                "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
-              }
-              className="transition-all gap-1 rounded-smm bg-[#F47420] hover:bg-[#ff9249] w-fit h-[40px] flex justify-center items-center text-[16px] font-semibold text-black px-6 cursor-pointer select-none lg:mt-[16px] mt-6"
-            >
-              <span className=" text-[13px] uppercase">Ver Currículum</span>
-              <Visit />
-            </a>
-          </div>
-        </div>
-
         {/*//*DESKTOP/////////////////////////////////////////////////////////////////////////////*/}
-        <div className="text-sm mt-20 lg:flex hidden py-16">
+        <div className="f-desktop lg:flex hidden ">
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
             <div className="pulse-container">
@@ -154,8 +131,8 @@ const Footer = () => {
         </div>
 
         {/*//*MOBILE/////////////////////////////////////////////////////////////////////////////*/}
-        <div className="lg:hidden block">
-          <div className="footer-mobile">
+        <div className="f-mobile lg:hidden block">
+          <div className="f-header">
             <div>©2024 CarlosBaso</div>
             <div
               style={{ marginTop: 0, justifyContent: "end" }}

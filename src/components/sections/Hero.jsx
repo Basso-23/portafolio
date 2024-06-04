@@ -107,7 +107,7 @@ const Hero = () => {
                 key={randomName}
                 className=" left-0 bannerShadowLeft absolute h-full w-[72%] z-50"
               >
-                <div className="w-[50%] h-full 2xl:px-[85px] px-[16px] flex flex-col justify-center -mt-24">
+                <div className="w-[50%] h-full 2xl:px-[85px] sm:px-[40px] px-[12px] flex flex-col justify-center -mt-24">
                   <div className="w-[100%] max-w-[400px] text-[60px] font-semibold">
                     {item.name}
                   </div>
