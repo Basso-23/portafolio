@@ -1,7 +1,7 @@
 import { IoDocumentTextSharp } from "react-icons/io5";
 
-const Cv = () => {
+const Resume = () => {
   return <IoDocumentTextSharp />;
 };
 
-export default Cv;
+export default Resume;

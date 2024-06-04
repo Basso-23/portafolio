@@ -12,8 +12,6 @@ import Astro from "@/icons/technology/Astro";
 import Firebase from "@/icons/technology/Firebase";
 import Html from "@/icons/technology/Html";
 import Css from "@/icons/technology/Css";
-import Back from "@/icons/Back";
-import External from "@/icons/External";
 
 const Modal = ({ project }) => {
   const [originalData, setOriginalData] = useAtom(originalAtom);
@@ -78,7 +76,7 @@ const Modal = ({ project }) => {
                 </div>
 
                 <div className="left-end">
-                  <div className="flex items-center justify-center gap-4">
+                  <div className="flex items-center justify-center gap-3">
                     <a
                       target="_blank"
                       href={item.url}

@@ -4,7 +4,6 @@ import RenderImage from "../utils/RenderImage";
 import Modal from "./Modal";
 import Footer from "./Footer";
 import Back from "@/icons/Back";
-import Plus from "@/icons/Plus";
 import Visit from "@/icons/Visit";
 import {
   AlertDialog,

@@ -19,7 +19,7 @@ const RenderImage = ({ url }) => {
   }, [url, imageLoaded, setImageLoaded]);
 
   return (
-    <div className="relative bg-[#111111] rounded-smm ">
+    <div className="relative bg-[#111111]">
       {imageLoaded && (
         <div className="absolute fixedCenterXnY">
           <div className="loader"></div>

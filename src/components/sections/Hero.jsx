@@ -3,7 +3,6 @@ import { motion as m } from "framer-motion";
 import Modal from "./Modal";
 import Back from "@/icons/Back";
 import Visit from "@/icons/Visit";
-import Info from "@/icons/Info";
 import JS from "@/icons/technology/JS";
 import React_logo from "@/icons/technology/React";
 import Next from "@/icons/technology/Next";
@@ -29,7 +28,7 @@ const Hero = () => {
   useEffect(() => {
     const selectedProjectName = originalData[nameIndex].name;
     setRandomName(selectedProjectName);
-  }, [nameIndex]);
+  }, [nameIndex, originalData]);
 
   const siguiente = () => {
     if (nameIndex === 0) {
@@ -49,11 +48,15 @@ const Hero = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      siguiente();
+      if (nameIndex === 0) {
+        setNameIndex(originalData.length - 1);
+      } else {
+        setNameIndex(nameIndex - 1);
+      }
     }, 20000);
 
     return () => clearTimeout(timer); // Limpiar el timeout anterior cuando el efecto se vuelva a ejecutar
-  }, [nameIndex]);
+  }, [nameIndex, originalData]);
 
   const skills = {
     Next: <Next />,

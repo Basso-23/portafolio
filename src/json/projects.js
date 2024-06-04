@@ -26,6 +26,7 @@ export const projects = [
       "<p><a target=_blank href=https://www.framer.com/motion/>Framer Motion</a> para las animaciones; una biblioteca de Framer para desarrolladores.</p>" +
       "</div>",
   },
+
   {
     name: "Azuki",
     category: "diseño",

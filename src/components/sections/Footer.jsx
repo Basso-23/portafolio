@@ -16,7 +16,7 @@ import NodeJS from "@/icons/technology/NodeJS";
 import React_logo from "@/icons/technology/React";
 import Shadcn from "@/icons/technology/Shadcn";
 import Tailwind from "@/icons/technology/Tailwind";
-import Cv from "@/icons/Cv";
+import Resume from "@/icons/Resume";
 import {
   Accordion,
   AccordionContent,
@@ -91,7 +91,7 @@ const Footer = () => {
               </CopyToClipboard>
               <Links icon={<Github />} url={"https://github.com/Basso-23"} />
               <Links
-                icon={<Cv />}
+                icon={<Resume />}
                 url={
                   "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
                 }
@@ -151,7 +151,7 @@ const Footer = () => {
               <Links icon={<Github />} url={"https://github.com/Basso-23"} />
 
               <Links
-                icon={<Cv />}
+                icon={<Resume />}
                 url={
                   "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
                 }
