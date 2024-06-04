@@ -138,7 +138,7 @@
 .p-subtitle {
   color: #a0a0a0;
   font-weight: 500;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   margin-top: 0.25rem;
 }
 
@@ -164,13 +164,12 @@
 .info {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 0.75rem;
   color: #838586;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  font-weight: 500;
 }
 
 .icons-container {
@@ -237,8 +236,8 @@
 .f-desktop {
   font-size: 0.875rem;
   margin-top: 5rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .f-container {
@@ -371,7 +370,7 @@
 
 .modal-summary {
   margin-top: 1.5rem /* 24px */;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .modal-info {
@@ -410,33 +409,41 @@
 }
 
 .modal-visit {
-  background-color: white;
+  background-color: #f47420;
   color: black;
-  height: 45px;
-  font-size: 14px;
+  height: 42px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  border-radius: 0px /* 2px */;
+  gap: 0.25rem;
   cursor: pointer;
   line-height: 1;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.15px;
 }
 
 .modal-github {
   background-color: transparent;
-  border-width: 1px;
-  border-color: #343434;
-  height: 48px;
-  font-size: 14px;
+  color: white;
+  border: 1px solid #343434;
+  height: 44px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  border-radius: 0px /* 2px */;
+  gap: 0.25rem;
   cursor: pointer;
   line-height: 1;
-  color: white;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .modal-right {
@@ -478,7 +485,7 @@
 .h1-content p {
   letter-spacing: -0.025em;
   text-wrap: pretty;
-  font-size: 14px;
+  font-size: 15px;
   color: #a1a1a1;
 }
 .h1-content a {
@@ -522,7 +529,7 @@
 .h2-content p {
   letter-spacing: -0.025em;
   text-wrap: pretty;
-  font-size: 16px;
+  font-size: 15px;
   color: #a1a1a1;
   line-height: 1.3;
 }

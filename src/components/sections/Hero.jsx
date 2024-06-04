@@ -1,23 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Send from "@/icons/Send";
-import Github from "@/icons/Github";
-import RenderImage from "@/components/utils/RenderImage";
-import { toast } from "sonner";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import "@fontsource-variable/inter";
-import { useAtom } from "jotai";
-import { originalAtom } from "@/atom";
-import {
-  AlertDialog,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+import { motion as m } from "framer-motion";
 import Modal from "./Modal";
 import Back from "@/icons/Back";
-import { motion as m } from "framer-motion";
 import Visit from "@/icons/Visit";
-import Plus from "@/icons/Plus";
 import Info from "@/icons/Info";
 import JS from "@/icons/technology/JS";
 import React_logo from "@/icons/technology/React";
@@ -27,6 +12,14 @@ import Astro from "@/icons/technology/Astro";
 import Firebase from "@/icons/technology/Firebase";
 import Html from "@/icons/technology/Html";
 import Css from "@/icons/technology/Css";
+import {
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { useAtom } from "jotai";
+import { originalAtom } from "@/atom";
 
 const Hero = () => {
   const [originalData, setOriginalData] = useAtom(originalAtom);
@@ -107,12 +100,12 @@ const Hero = () => {
                 key={randomName}
                 className=" left-0 bannerShadowLeft absolute h-full w-[72%] z-50"
               >
-                <div className="w-[50%] h-full 2xl:px-[85px] sm:px-[40px] px-[12px] flex flex-col justify-center -mt-24">
-                  <div className="w-[100%] max-w-[400px] text-[60px] font-semibold">
+                <div className="w-[75%] h-full 2xl:px-[85px] sm:px-[40px] px-[12px] flex flex-col justify-center -mt-24">
+                  <div className="w-[100%] max-w-[400px] text-[min(3.5vw,60px)] font-semibold leading-[1.15] ">
                     {item.name}
                   </div>
                   <div className="text-[14px] text-[#6e6e6e] font-medium capitalize mt-4 w-fit">
-                    Categoría | {item.category}
+                    Categoría • {item.category}
                   </div>
                   <div className="text-[16px] text-[#dadada] font-medium w-[100%] max-w-[450px] mt-2">
                     {item.summary}
@@ -147,12 +140,7 @@ const Hero = () => {
                       <AlertDialogContent asChild>
                         <div>
                           <AlertDialogCancel asChild>
-                            <div
-                              style={{
-                                fontFamily: "Inter Variable, sans-serif",
-                              }}
-                              className="volver hover:text-white lg:pl-14 pl-4 lg:mt-9 mt-16"
-                            >
+                            <div className="volver hover:text-white lg:pl-14 pl-4 lg:mt-9 mt-16 inter">
                               <div className="lg:pb-0 pb-4">
                                 <Back />
                               </div>
@@ -171,8 +159,8 @@ const Hero = () => {
                       className="rounded-smm tooltip-container w-fit transition-all h-full aspect-square border-2 border-[#F47420] text-[#F47420] hover:text-[#ff9249] hover:border-[#ff9249] flex justify-center items-center text-[20px] cursor-pointer select-none"
                     >
                       <Visit />
-                      <div className="tooltip fixedCenterX w-fit min-w-[80px] ">
-                        Visitar sitio
+                      <div className="tooltip fixedCenterX w-fit min-w-[100px] ">
+                        Visitar página
                       </div>
                     </a>
                   </div>

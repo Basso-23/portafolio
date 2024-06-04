@@ -4,7 +4,6 @@ import { originalAtom } from "@/atom";
 import RenderImage from "../utils/RenderImage";
 import Github from "@/icons/Github";
 import Visit from "@/icons/Visit";
-import "@fontsource-variable/inter";
 import JS from "@/icons/technology/JS";
 import React_logo from "@/icons/technology/React";
 import Next from "@/icons/technology/Next";
@@ -34,10 +33,7 @@ const Modal = ({ project }) => {
   };
 
   return (
-    <section
-      style={{ fontFamily: "Inter Variable, sans-serif" }}
-      className="w-full lg:h-[83%] lg:mt-5 h-[100svh]"
-    >
+    <section className="w-full lg:h-[83%] lg:mt-5 h-[100svh] inter">
       {originalData
         .filter((item) => item.name === project)
         .map((item, index) => (
@@ -55,7 +51,7 @@ const Modal = ({ project }) => {
                     className="pulse-container"
                   >
                     <div className="pulse"></div>
-                    <div className="text-white font-normal">En línea</div>
+                    <div className="text-white">En línea</div>
                   </div>
                 </div>
 
@@ -84,10 +80,10 @@ const Modal = ({ project }) => {
                     <a
                       target="_blank"
                       href={item.url}
-                      className="modal-visit hover:bg-[#d1d1d1]"
+                      className="modal-visit hover:bg-[#ff9249]"
                     >
-                      <span className=" text-[13.5px] font-medium">
-                        Visitar sitio
+                      <span className="text-[13px] leading-none">
+                        Visitar página
                       </span>
                       <Visit />
                     </a>
@@ -97,9 +93,7 @@ const Modal = ({ project }) => {
                       className="modal-github hover:bg-[#343434]"
                     >
                       <Github />
-                      <span className=" text-[13.5px] font-medium">
-                        Código fuente
-                      </span>
+                      <span className="text-[13px] leading-none">Github</span>
                     </a>
                   </div>
                 </div>
@@ -138,9 +132,11 @@ const Modal = ({ project }) => {
                 <a
                   target="_blank"
                   href={item.url}
-                  className="modal-visit hover:bg-[#d1d1d1]"
+                  className="modal-visit hover:bg-[#ff9249]"
                 >
-                  <span> Visitar sitio</span>
+                  <span className="text-[13px] leading-none">
+                    Visitar página
+                  </span>
                   <Visit />
                 </a>
                 <a
@@ -149,7 +145,7 @@ const Modal = ({ project }) => {
                   className="modal-github hover:bg-[#343434]"
                 >
                   <Github />
-                  <span>Código fuente</span>
+                  <span className="text-[13px] leading-none">Github</span>
                 </a>
               </div>
 
@@ -160,7 +156,7 @@ const Modal = ({ project }) => {
                   className="pulse-container"
                 >
                   <div className="pulse"></div>
-                  <div className="text-white font-normal">En línea</div>
+                  <div className="text-white">En línea</div>
                 </div>
               </div>
 

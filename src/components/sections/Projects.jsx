@@ -84,8 +84,8 @@ const Projects = () => {
                         </div>
                       </AlertDialogTrigger>
                       <div className="tooltip-container">
-                        <div className="tooltip fixedCenterX w-[80px]">
-                          Visitar sitio
+                        <div className="tooltip fixedCenterX w-[100px]">
+                          Visitar página
                         </div>
                         <a target="_blank" href={item.url}>
                           <Visit />
