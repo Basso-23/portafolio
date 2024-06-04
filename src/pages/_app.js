@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <div className="inter">
       <Head>
-        <title>Carlos Baso</title>
+        <title>Carlos Baso | Portafolio</title>
         <meta
           name="description"
           content="Portafolio - Carlos Baso Ing. de Software; JavaScript, React JS, Next JS y más. ¡Echa un vistazo a mis proyectos!"

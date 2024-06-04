@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { useAtom } from "jotai";
 import { dataAtom } from "@/atom";
+import Info from "@/icons/Info";
 
 const Projects = () => {
   const [data, setData] = useAtom(dataAtom);
@@ -80,7 +81,7 @@ const Projects = () => {
                           <div className="tooltip fixedCenterX w-[65px]">
                             Más info
                           </div>
-                          <Plus />
+                          <Info />
                         </div>
                       </AlertDialogTrigger>
                       <div className="tooltip-container">

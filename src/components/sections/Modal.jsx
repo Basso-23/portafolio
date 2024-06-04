@@ -12,6 +12,8 @@ import Astro from "@/icons/technology/Astro";
 import Firebase from "@/icons/technology/Firebase";
 import Html from "@/icons/technology/Html";
 import Css from "@/icons/technology/Css";
+import Back from "@/icons/Back";
+import External from "@/icons/External";
 
 const Modal = ({ project }) => {
   const [originalData, setOriginalData] = useAtom(originalAtom);
@@ -76,25 +78,28 @@ const Modal = ({ project }) => {
                 </div>
 
                 <div className="left-end">
-                  <div className="modal-buttons-container">
+                  <div className="flex items-center justify-center gap-4">
                     <a
                       target="_blank"
                       href={item.url}
-                      className="modal-visit hover:bg-[#ff9249]"
+                      className="modal-visit flex-1 hover:bg-[#ff9249]"
                     >
                       <span className="text-[13px] leading-none">
                         Visitar página
                       </span>
-                      <Visit />
                     </a>
-                    <a
-                      target="_blank"
-                      href={item.github}
-                      className="modal-github hover:bg-[#343434]"
-                    >
-                      <Github />
-                      <span className="text-[13px] leading-none">Github</span>
-                    </a>
+                    <div className="tooltip-container">
+                      <div className="tooltip fixedCenterX w-[90px]">
+                        Ver código
+                      </div>
+                      <a
+                        target="_blank"
+                        href={item.github}
+                        className="modal-github aspect-square hover:bg-[#343434]"
+                      >
+                        <Github />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -96,19 +96,13 @@
 }
 
 .github-button {
-  background-color: #0d0d0d;
+  background-color: transparent;
   display: flex;
   align-items: center;
   color: white;
-  min-width: 175px;
-  gap: 0.5rem /* 8px */;
-  padding-top: 0.75rem /* 12px */;
-  padding-bottom: 0.75rem /* 12px */;
   justify-content: center;
-  border-radius: 0px /* 2px */;
   cursor: pointer;
   font-size: 0.875rem /* 14px */;
-  font-weight: 400;
   border: solid 1px #343434;
   min-height: 46px;
 }
@@ -255,8 +249,8 @@
 }
 
 .pulse {
-  height: 6px;
-  width: 6px;
+  height: 6.5px;
+  width: 6.5px;
   border-radius: 50%;
   background-color: #00ff6a;
   animation: 1.5s pulse infinite ease-in-out;
@@ -369,7 +363,7 @@
 }
 
 .modal-summary {
-  margin-top: 1.5rem /* 24px */;
+  margin-top: 1.55rem /* 24px */;
   font-size: 15px;
 }
 
@@ -400,19 +394,13 @@
 }
 
 .modal-buttons-container {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 0.75rem /* 12px */;
-  align-items: center;
-  font-size: 0.875rem /* 14px */;
-  line-height: 1.25rem /* 20px */;
 }
 
 .modal-visit {
   background-color: #f47420;
   color: black;
   height: 42px;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -432,7 +420,7 @@
   color: white;
   border: 1px solid #343434;
   height: 44px;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;

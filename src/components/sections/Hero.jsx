@@ -90,17 +90,17 @@ const Hero = () => {
               style={{
                 backgroundImage: `url(${item.image})`,
               }}
-              className="w-[75%] max-h-[850px] aspect-video bg-center bg-no-repeat bg-cover relative 2xl:block hidden"
+              className="w-[75%] max-h-[800px] aspect-video bg-center bg-no-repeat bg-cover relative 2xl:block hidden"
             >
               <div className=" w-full h-full bottom-0 bannerShadowBot absolute"></div>
             </m.div>
 
-            <div className="w-[100%] max-h-[850px] aspect-video absolute top-0 2xl:block hidden">
+            <div className="w-[100%] h-[875px] absolute top-0 2xl:block hidden">
               <div
                 key={randomName}
                 className=" left-0 bannerShadowLeft absolute h-full w-[72%] z-50"
               >
-                <div className="w-[75%] h-full 2xl:px-[85px] sm:px-[40px] px-[12px] flex flex-col justify-center -mt-24">
+                <div className="w-[75%] h-full 2xl:px-[85px] sm:px-[40px] px-[12px] flex flex-col justify-center mt-[-150px]">
                   <div className="w-[100%] max-w-[400px] text-[min(3.5vw,60px)] font-semibold leading-[1.15] ">
                     {item.name}
                   </div>
@@ -130,8 +130,7 @@ const Hero = () => {
                   <div className=" flex gap-3 mt-12 items-center w-fit">
                     <AlertDialog>
                       <AlertDialogTrigger asChild>
-                        <div className="transition-all gap-1 rounded-smm bg-[#F47420] hover:bg-[#ff9249] w-fit h-[40px] flex justify-center items-center text-[20px] font-semibold text-black px-6 cursor-pointer select-none">
-                          <Info />
+                        <div className="transition-all gap-1 rounded-smm bg-[#F47420] hover:bg-[#ff9249] w-fit h-[40px] flex justify-center items-center text-[20px] font-semibold text-black px-12 cursor-pointer select-none">
                           <span className="text-[13px] leading-none">
                             MÁS INFORMACIÓN
                           </span>
@@ -167,7 +166,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className=" flex justify-between select-none absolute w-full -mt-24 text-[38px] fixedCenterY px-4 z-50">
+              <div className=" flex justify-between select-none absolute w-full mt-[-150px] text-[38px] fixedCenterY px-4 z-50">
                 <div
                   onClick={() => {
                     anterior();
