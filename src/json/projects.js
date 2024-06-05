@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Pillars Brewery",
-    category: "diseño",
+    category: "front-end",
     image: "https://i.imgur.com/6luOD3J.jpeg",
     position: "top",
     url: "https://www.pillarsbrewery.com/",
@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     name: "Mammut",
-    category: "diseño",
+    category: "front-end",
     image: "https://i.imgur.com/IS0rTpT.jpeg",
     position: "top",
     url: "https://www.mammut.com/uk/en",
