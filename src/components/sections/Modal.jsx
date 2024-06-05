@@ -37,7 +37,7 @@ const Modal = ({ project }) => {
         .filter((item) => item.name === project)
         .map((item, index) => (
           <div key={index} className="w-full h-full">
-            {/*//*DESKTOP/////////////////////////////////////////////////////////////////////////////*/}
+            {/*//*DESKTOP /////////////////////////////////////////////////////////////////////////////*/}
             <div className="modal-container lg:flex hidden">
               <div className="modal-left">
                 <div className="modal-name">{item.name}</div>
@@ -67,7 +67,7 @@ const Modal = ({ project }) => {
                       className="tooltip-container w-fit"
                     >
                       <TechToRender name={item} />
-                      <div className="tooltip fixedCenterX w-fit min-w-[65px]">
+                      <div className="tooltip fixedCenterX w-[65px]">
                         {item}
                       </div>
                     </div>
@@ -116,7 +116,7 @@ const Modal = ({ project }) => {
               </div>
             </div>
 
-            {/*//*MOBILE/////////////////////////////////////////////////////////////////////////////*/}
+            {/*//*MOBILE /////////////////////////////////////////////////////////////////////////////*/}
             <div className="modal-container-mobile lg:hidden block">
               <div className="pointer-events-none">
                 <RenderImage url={item.image} />
@@ -175,9 +175,7 @@ const Modal = ({ project }) => {
                     className="tooltip-container w-fit"
                   >
                     <TechToRender name={item} />
-                    <div className="tooltip fixedCenterX w-fit min-w-[65px]">
-                      {item}
-                    </div>
+                    <div className="tooltip fixedCenterX w-[65px]">{item}</div>
                   </div>
                 ))}
               </div>

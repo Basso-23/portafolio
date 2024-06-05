@@ -71,7 +71,7 @@ const Footer = () => {
         }}
         className="f-container"
       >
-        {/*//*DESKTOP/////////////////////////////////////////////////////////////////////////////*/}
+        {/*//*DESKTOP /////////////////////////////////////////////////////////////////////////////*/}
         <div className="f-desktop lg:flex hidden">
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
@@ -130,7 +130,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/*//*MOBILE/////////////////////////////////////////////////////////////////////////////*/}
+        {/*//*MOBILE /////////////////////////////////////////////////////////////////////////////*/}
         <div className="f-mobile lg:hidden block">
           <div className="f-header">
             <div>©2024 CarlosBaso</div>
