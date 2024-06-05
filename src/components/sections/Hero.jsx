@@ -24,6 +24,7 @@ const Hero = () => {
   const [originalData, setOriginalData] = useAtom(originalAtom);
   const [nameIndex, setNameIndex] = useState(originalData.length - 1);
   const [randomName, setRandomName] = useState();
+  const [tempKey, setTempKey] = useState();
   const [key, setKey] = useState(0);
 
   useEffect(() => {
@@ -106,7 +107,7 @@ const Hero = () => {
               </m.div>
 
               <div className="h-left">
-                <div key={randomName} className="h-info-container shadowLeft">
+                <div className="h-info-container shadowLeft">
                   <div className="h-info 2xl:px-[85px] sm:px-[40px] px-[12px]">
                     <div className="h-title">{item.name}</div>
                     <div className="h-category">
@@ -134,7 +135,10 @@ const Hero = () => {
                     <div className="h-buttons">
                       <AlertDialog>
                         <AlertDialogTrigger asChild>
-                          <div className="h-moreinfo hover:bg-[#ff9249]">
+                          <div
+                            onClick={() => setTempKey(item.name)}
+                            className="h-moreinfo hover:bg-[#ff9249]"
+                          >
                             <span className="text-[13px] leading-none">
                               MÁS INFORMACIÓN
                             </span>
@@ -150,7 +154,7 @@ const Hero = () => {
                                 <span className="lg:pb-0 pb-4">Volver</span>
                               </div>
                             </AlertDialogCancel>
-                            <Modal project={item.name} />
+                            <Modal project={tempKey} />
                           </div>
                         </AlertDialogContent>
                       </AlertDialog>
@@ -250,7 +254,10 @@ const Hero = () => {
                   >
                     <AlertDialog>
                       <AlertDialogTrigger asChild>
-                        <div className="h-moreinfo-mobile hover:bg-[#ff9249] ">
+                        <div
+                          onClick={() => setTempKey(item.name)}
+                          className="h-moreinfo-mobile hover:bg-[#ff9249] "
+                        >
                           <span className="text-[13px] leading-none">
                             MÁS INFORMACIÓN
                           </span>
@@ -266,7 +273,7 @@ const Hero = () => {
                               <span className="lg:pb-0 pb-4">Volver</span>
                             </div>
                           </AlertDialogCancel>
-                          <Modal project={item.name} />
+                          <Modal project={tempKey} />
                         </div>
                       </AlertDialogContent>
                     </AlertDialog>
