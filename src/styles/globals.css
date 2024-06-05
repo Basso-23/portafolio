@@ -134,6 +134,7 @@
   font-weight: 500;
   padding-bottom: 0.5rem;
   margin-top: 0.25rem;
+  text-wrap: pretty;
 }
 
 .grid-container {
@@ -459,7 +460,7 @@
 }
 
 .f-mobile {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 

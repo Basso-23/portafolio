@@ -3,7 +3,6 @@ import { useAtom } from "jotai";
 import { originalAtom } from "@/atom";
 import RenderImage from "../utils/RenderImage";
 import Github from "@/icons/Github";
-import Visit from "@/icons/Visit";
 import JS from "@/icons/technology/JS";
 import React_logo from "@/icons/technology/React";
 import Next from "@/icons/technology/Next";
