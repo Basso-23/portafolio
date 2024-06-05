@@ -1,10 +1,10 @@
 export const projects = [
   {
-    name: "Humankind",
+    name: "Pillars Brewery",
     category: "diseño",
-    image: "https://i.imgur.com/KN8GEvV.png",
-    position: "center",
-    url: "https://portfolio-v2-three-woad.vercel.app/",
+    image: "https://i.imgur.com/6luOD3J.jpeg",
+    position: "top",
+    url: "https://www.pillarsbrewery.com/",
     github: "https://github.com/Basso-23/Portfolio_v2",
     tech: ["Astro", "Tailwind", "CSS", "HTML"],
     summary:
@@ -27,15 +27,14 @@ export const projects = [
       "<p><a target=_blank href=https://www.framer.com/motion/>Framer Motion</a> para las animaciones; una biblioteca de Framer para desarrolladores.</p>" +
       "</div>",
   },
-
   {
-    name: "Azuki",
+    name: "Mammut",
     category: "diseño",
-    image: "https://i.imgur.com/uLJMDzq.png",
-    position: "right",
-    url: "https://portfolio-v2-three-woad.vercel.app/",
+    image: "https://i.imgur.com/IS0rTpT.jpeg",
+    position: "top",
+    url: "https://www.mammut.com/uk/en",
     github: "https://github.com/Basso-23/Portfolio_v2",
-    tech: ["Next", "React", "Tailwind", "Javascript"],
+    tech: ["Astro", "Tailwind", "CSS", "HTML"],
     summary:
       "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
