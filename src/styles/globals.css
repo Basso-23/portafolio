@@ -175,39 +175,6 @@
   color: #6e6e6e;
 }
 
-.tooltip-container:hover {
-  color: white;
-}
-
-.tooltip-container {
-  position: relative;
-  cursor: pointer;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-@media (min-width: 640px) {
-  .tooltip-container:hover .tooltip {
-    display: block;
-  }
-}
-
-.tooltip {
-  display: none;
-  position: absolute;
-  top: -2.5rem;
-  background-color: rgb(38, 38, 38);
-  padding: 0.5rem;
-  font-size: 12px;
-  text-align: center;
-  line-height: 1;
-  color: white;
-  border-radius: 0px;
-  font-weight: 400;
-  letter-spacing: 0em;
-}
-
 .volver {
   display: flex;
   gap: 2px;
@@ -246,7 +213,7 @@
 }
 
 .modal-summary {
-  margin-top: 1.55rem /* 24px */;
+  margin-top: 20px /* 24px */;
   font-size: 15px;
 }
 
@@ -276,7 +243,11 @@
   flex-direction: column;
 }
 
-.modal-buttons-container {
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .modal-visit {
@@ -296,6 +267,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: -0.15px;
+  flex: 1 1 0%;
 }
 
 .modal-github {
@@ -303,7 +275,7 @@
   color: white;
   border: 1px solid #343434;
   height: 44px;
-  font-size: 16px;
+  font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -570,4 +542,37 @@
   100% {
     box-shadow: 0 0 0 5px #69ffa800;
   }
+}
+
+.tooltip-container:hover {
+  color: white;
+}
+
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (min-width: 640px) {
+  .tooltip-container:hover .tooltip {
+    display: block;
+  }
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -2.5rem;
+  background-color: rgb(38, 38, 38);
+  padding: 0.5rem;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
+  color: white;
+  border-radius: 0px;
+  font-weight: 400;
+  letter-spacing: 0em;
 }

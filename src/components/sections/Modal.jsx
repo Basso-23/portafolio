@@ -76,11 +76,11 @@ const Modal = ({ project }) => {
                 </div>
 
                 <div className="left-end">
-                  <div className="flex items-center justify-center gap-3">
+                  <div className="modal-buttons">
                     <a
                       target="_blank"
                       href={item.url}
-                      className="modal-visit flex-1 hover:bg-[#ff9249]"
+                      className="modal-visit hover:bg-[#ff9249]"
                     >
                       <span className="text-[13px] leading-none">
                         Visitar página
@@ -119,7 +119,7 @@ const Modal = ({ project }) => {
 
             {/*//*MOBILE/////////////////////////////////////////////////////////////////////////////*/}
             <div className="modal-container-mobile lg:hidden block">
-              <div className="pointer-events-none mt-0">
+              <div className="pointer-events-none">
                 <RenderImage url={item.image} />
               </div>
 
@@ -128,10 +128,7 @@ const Modal = ({ project }) => {
               </div>
               <div className="modal-summary">{item.summary}</div>
 
-              <div
-                style={{ marginTop: 24 }}
-                className="modal-buttons-container"
-              >
+              <div className="modal-buttons mt-7">
                 <a
                   target="_blank"
                   href={item.url}
@@ -140,19 +137,22 @@ const Modal = ({ project }) => {
                   <span className="text-[13px] leading-none">
                     Visitar página
                   </span>
-                  <Visit />
                 </a>
-                <a
-                  target="_blank"
-                  href={item.github}
-                  className="modal-github hover:bg-[#343434]"
-                >
-                  <Github />
-                  <span className="text-[13px] leading-none">Github</span>
-                </a>
+                <div className="tooltip-container">
+                  <div className="tooltip fixedCenterX w-[90px]">
+                    Ver código
+                  </div>
+                  <a
+                    target="_blank"
+                    href={item.github}
+                    className="modal-github aspect-square hover:bg-[#343434]"
+                  >
+                    <Github />
+                  </a>
+                </div>
               </div>
 
-              <div className="modal-info mt-4">
+              <div className="modal-info mt-6">
                 <div>Estado</div>
                 <div
                   style={{ marginTop: 0.5, justifyContent: "end" }}
