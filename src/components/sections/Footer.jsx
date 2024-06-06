@@ -76,7 +76,15 @@ const Footer = () => {
           <div className="text-[#838586] w-[25%]">
             <div>©2024 CarlosBaso</div>
             <div className="pulse-container">
-              <div className="invisible"></div>
+              <a
+                target="_blank"
+                href={
+                  "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
+                }
+                className="underline underline-offset-4"
+              >
+                Ver currículum
+              </a>
             </div>
             <div className="links-container">
               <CopyToClipboard
@@ -93,12 +101,6 @@ const Footer = () => {
               <Links
                 icon={<Linkedin />}
                 url={"https://www.linkedin.com/in/carlosbaso/"}
-              />
-              <Links
-                icon={<Resume />}
-                url={
-                  "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
-                }
               />
             </div>
           </div>
@@ -122,7 +124,7 @@ const Footer = () => {
           </div>
 
           <div className="job-container">
-            <div className="font-medium">Historial Laboral</div>
+            <div className="font-medium">Historial laboral</div>
             <Job name={"Hong Kong Smart"} url={"https://hkspos.com"} />
             <Job name={"Realizando Metas"} url={"https://somosrmpa.com/"} />
             <Job name={"Partido Alianza"} url={"https://partidoalianza.com/"} />
@@ -185,7 +187,7 @@ const Footer = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Historial Laboral</AccordionTrigger>
+              <AccordionTrigger>Historial laboral</AccordionTrigger>
               <AccordionContent asChild>
                 <div className="job-mobile">
                   <Job name={"Hong Kong Smart"} url={"https://hkspos.com"} />
