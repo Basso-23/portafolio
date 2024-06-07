@@ -4,11 +4,11 @@ export const projects = [
     category: "front-end",
     image: "https://i.imgur.com/6luOD3J.jpeg",
     position: "top",
-    url: "https://www.pillarsbrewery.com/",
-    github: "https://github.com/Basso-23/Portfolio_v2",
-    tech: ["Astro", "Tailwind", "CSS", "HTML"],
+    url: "https://pillars-brewery.vercel.app/",
+    github: "https://github.com/Basso-23/pillars-brewery",
+    tech: ["Astro", "React", "Tailwind", "CSS", "HTML"],
     summary:
-      "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
+      "Pillars Brewery es una cervecería de lager artesanal. Este diseño refleja el espíritu único y familiar del negocio.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +

@@ -120,7 +120,7 @@ const Footer = () => {
             <Tech name={"React Native"} icon={<React_logo />} />
             <Tech name={"HTML 5"} icon={<Html />} />
             <Tech name={"CSS"} icon={<Css />} />
-            <Tech name={"Linux"} icon={<Linux />} />
+            <Tech name={"Odoo"} icon={<Linux />} />
           </div>
 
           <div className="job-container">
@@ -182,7 +182,7 @@ const Footer = () => {
                   <Tech name={"React Native"} icon={<React_logo />} />
                   <Tech name={"HTML 5"} icon={<Html />} />
                   <Tech name={"CSS"} icon={<Css />} />
-                  <Tech name={"Linux"} icon={<Linux />} />
+                  <Tech name={"Odoo"} icon={<Linux />} />
                 </div>
               </AccordionContent>
             </AccordionItem>

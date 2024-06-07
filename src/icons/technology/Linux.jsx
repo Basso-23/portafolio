@@ -1,7 +1,7 @@
-import { FaLinux } from "react-icons/fa";
+import { SiOdoo } from "react-icons/si";
 
 const Linux = () => {
-  return <FaLinux />;
+  return <SiOdoo />;
 };
 
 export default Linux;

@@ -730,3 +730,21 @@
     width: 100%;
   }
 }
+
+.contact {
+  width: 3rem /* 48px */;
+  aspect-ratio: 1 / 1;
+  background-color: #f47420;
+  position: fixed;
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: black;
+}
+
+.contact:hover {
+  background-color: #ff9249;
+}
