@@ -11,7 +11,7 @@ const Home = () => {
       <a
         target="_blank"
         href={"https://beacons.ai/carlosbaso"}
-        className="contact sm:bottom-10 sm:right-10 bottom-2 right-2"
+        className="contact sm:bottom-8 sm:right-8 bottom-3 right-2"
       >
         <Contact />
       </a>

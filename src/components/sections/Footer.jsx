@@ -108,15 +108,15 @@ const Footer = () => {
           <div className="tech-container">
             <div className="font-medium">Tecnologías</div>
             <Tech name={"Javascript"} icon={<JS />} />
-            <Tech name={"React JS"} icon={<React_logo />} />
-            <Tech name={"Next JS"} icon={<Next />} />
+            <Tech name={"React"} icon={<React_logo />} />
+            <Tech name={"Next.js"} icon={<Next />} />
             <Tech name={"Tailwind CSS"} icon={<Tailwind />} />
             <Tech name={"Shadcn/ui"} icon={<Shadcn />} />
             <Tech name={"Framer Motion"} icon={<Acernity />} />
             <Tech name={"Astro"} icon={<Astro />} />
             <Tech name={"Firebase"} icon={<Firebase />} />
             <Tech name={"Git"} icon={<Git />} />
-            <Tech name={"Node JS"} icon={<NodeJS />} />
+            <Tech name={"Node.js"} icon={<NodeJS />} />
             <Tech name={"React Native"} icon={<React_logo />} />
             <Tech name={"HTML 5"} icon={<Html />} />
             <Tech name={"CSS"} icon={<Css />} />
@@ -170,15 +170,15 @@ const Footer = () => {
               <AccordionContent asChild>
                 <div className="tech-mobile">
                   <Tech name={"Javascript"} icon={<JS />} />
-                  <Tech name={"React JS"} icon={<React_logo />} />
-                  <Tech name={"Next JS"} icon={<Next />} />
+                  <Tech name={"React"} icon={<React_logo />} />
+                  <Tech name={"Next.js"} icon={<Next />} />
                   <Tech name={"Tailwind CSS"} icon={<Tailwind />} />
                   <Tech name={"Shadcn/ui"} icon={<Shadcn />} />
                   <Tech name={"Framer Motion"} icon={<Acernity />} />
                   <Tech name={"Astro"} icon={<Astro />} />
                   <Tech name={"Firebase"} icon={<Firebase />} />
                   <Tech name={"Git"} icon={<Git />} />
-                  <Tech name={"Node JS"} icon={<NodeJS />} />
+                  <Tech name={"Node.js"} icon={<NodeJS />} />
                   <Tech name={"React Native"} icon={<React_logo />} />
                   <Tech name={"HTML 5"} icon={<Html />} />
                   <Tech name={"CSS"} icon={<Css />} />

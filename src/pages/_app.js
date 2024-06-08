@@ -9,7 +9,7 @@ const App = ({ Component, pageProps }) => {
         <title>Carlos Baso</title>
         <meta
           name="description"
-          content="Carlos Baso - Portafolio; JavaScript, React JS, Next JS y más. ¡Echa un vistazo a mis proyectos!"
+          content="Carlos Baso - Portafolio; JavaScript, React, Next.js y más. ¡Echa un vistazo a mis proyectos!"
         />
       </Head>
       <Component {...pageProps} />
