@@ -12,7 +12,7 @@ export const projects = [
     h1:
       "<div>" +
       "<h1>Descripción General</h1>" +
-      "<p>Este es un diseño de una página web para un negocio que vende cerveza artesanal.</p>" +
+      "<p>Este es un diseño de una página web para una empresa que se dedica a la venta de cerveza artesanal.</p>" +
       "<p>- Landing Page</p>" +
       "<p>- Catálogo de categorías</p>" +
       "<p>- Banner de reseñas animado</p>" +
@@ -25,6 +25,8 @@ export const projects = [
       "<p><a target=_blank href=https://vercel.com/>Vercel</a> para el despliegue del sitio web.</p>" +
       "<p>Animaciones realizadas con <a target=_blank href=https://www.framer.com/motion/>Framer Motion</a>.</p>" +
       "<p>Carrusel de imágenes interactivo realizado con <a target=_blank href=https://swiperjs.com/demos>Swiper</a>.</p>" +
+      "<p></p>" +
+      "<p>Nota: El proyecto es simplemente para la muestra del diseño; no posee ningún tipo de funcionalidad.</p>" +
       "</div>",
   },
   {
