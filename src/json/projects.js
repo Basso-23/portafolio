@@ -6,27 +6,22 @@ export const projects = [
     position: "top",
     url: "https://pillars-brewery.vercel.app/",
     github: "https://github.com/Basso-23/pillars-brewery",
-    tech: ["Astro", "React", "Tailwind", "CSS", "HTML"],
+    tech: ["Astro", "React", "Tailwind", "CSS"],
     summary:
       "Pillars Brewery es una cervecería de lager artesanal. Este diseño refleja el espíritu único y familiar del negocio.",
     h1:
       "<div>" +
       "<h1>Descripción General</h1>" +
-      "<p>Este es un diseño de una página web para una empresa que se dedica a la venta de cerveza artesanal.</p>" +
-      "<p>- Landing Page</p>" +
-      "<p>- Catálogo de categorías</p>" +
-      "<p>- Banner de reseñas animado</p>" +
-      "<p>- Opciones de compra o venta</p>" +
-      "<p>- 100% responsive</p>" +
+      "<p>Diseño para una página web de un negocio dedicado a la venta de cerveza artesanal.</p>" +
       "</div>",
     h2:
       "<div>" +
       "<h1>Herramientas</h1>" +
       "<p><a target=_blank href=https://vercel.com/>Vercel</a> para el despliegue del sitio web.</p>" +
       "<p>Animaciones realizadas con <a target=_blank href=https://www.framer.com/motion/>Framer Motion</a>.</p>" +
-      "<p>Carrusel de imágenes interactivo realizado con <a target=_blank href=https://swiperjs.com/demos>Swiper</a>.</p>" +
+      "<p>Slider interactivo realizado con <a target=_blank href=https://swiperjs.com/demos>Swiper</a>.</p>" +
       "<p></p>" +
-      "<p>Nota: El proyecto es simplemente para la muestra del diseño; no posee ningún tipo de funcionalidad.</p>" +
+      "<p>Nota: el proyecto es simplemente para la muestra del diseño; no posee ningún tipo de funcionalidad.</p>" +
       "</div>",
   },
   {

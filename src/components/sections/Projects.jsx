@@ -96,7 +96,7 @@ const Projects = () => {
                   <AlertDialogContent asChild>
                     <div>
                       <AlertDialogCancel asChild>
-                        <div className="volver hover:text-white lg:pl-14 pl-4 lg:mt-9 mt-16 inter">
+                        <div className="volver hover:text-white lg:pl-10 pl-4 lg:mt-9 mt-16 inter">
                           <div className="lg:pb-0 pb-4">
                             <Back />
                           </div>

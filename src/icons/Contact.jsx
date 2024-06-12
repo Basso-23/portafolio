@@ -1,7 +1,7 @@
-import { TbMessages } from "react-icons/tb";
+import { PiChatsDuotone } from "react-icons/pi";
 
 const Contact = () => {
-  return <TbMessages />;
+  return <PiChatsDuotone />;
 };
 
 export default Contact;
