@@ -318,7 +318,7 @@
 .modal-container {
   width: 100%;
   height: 100%;
-  padding-left: 2.5rem /* 56px */;
+  padding-left: 3rem /* 56px */;
 }
 
 .modal-left {
@@ -363,10 +363,9 @@
 }
 
 .left-end {
-  flex-grow: 1;
-  justify-content: flex-end;
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
 }
 
 .modal-buttons {

@@ -32,11 +32,11 @@ const Modal = ({ project }) => {
   };
 
   return (
-    <section className="w-full lg:h-[83%] lg:mt-5 h-[100svh] inter">
+    <section className="w-full lg:h-[100%] lg:mt-[-50px] h-[100dvh] inter">
       {originalData
         .filter((item) => item.name === project)
         .map((item, index) => (
-          <div key={index} className="w-full h-full">
+          <div key={index} className="w-full h-full lg:pt-[70px] ">
             {/*//*DESKTOP /////////////////////////////////////////////////////////////////////////////*/}
             <div className="modal-container lg:flex hidden">
               <div className="modal-left">
