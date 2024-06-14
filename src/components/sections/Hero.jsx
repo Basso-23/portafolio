@@ -110,9 +110,7 @@ const Hero = () => {
                 <div className="h-info-container shadowLeft">
                   <div className="h-info 2xl:px-[85px] sm:px-[40px] px-[12px]">
                     <div className="h-title">{item.name}</div>
-                    <div className="h-category">
-                      Categoría • {item.category}
-                    </div>
+
                     <div className="h-summary">{item.summary}</div>
 
                     <div className="w-fit text-[#dadada]">
@@ -245,7 +243,10 @@ const Hero = () => {
                   <div className="h-mobile-title text-[min(9.5vw,45px)]">
                     {item.name}
                   </div>
-                  <div style={{ marginTop: 6 }} className="h-category">
+                  <div
+                    style={{ marginTop: 0, visibility: "hidden" }}
+                    className="h-category"
+                  >
                     Categoría • {item.category}
                   </div>
                   <div

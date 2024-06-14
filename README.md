@@ -1,4 +1,4 @@
-![Alt text](https://i.imgur.com/A9j5XFn.png)
+![Alt text](https://i.imgur.com/b43GgFu.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

@@ -99,6 +99,12 @@ const Modal = ({ project }) => {
                     </div>
                   ))}
                 </div>
+
+                {item.copyright && (
+                  <div className="mt-14 text-[13px] text-[#616161]">
+                    {item.copyright}
+                  </div>
+                )}
               </div>
 
               <div className="modal-right">
@@ -179,6 +185,12 @@ const Modal = ({ project }) => {
                   </div>
                 ))}
               </div>
+
+              {item.copyright && (
+                <div className="mt-14 text-[13px] text-[#616161]">
+                  {item.copyright}
+                </div>
+              )}
 
               <div
                 dangerouslySetInnerHTML={{ __html: item.h1 }}
