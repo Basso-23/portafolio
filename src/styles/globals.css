@@ -255,7 +255,7 @@
 
 .p-subtitle {
   color: #6e6e6e;
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 0.5rem;
   margin-top: 0.25rem;
   text-wrap: pretty;
@@ -449,6 +449,7 @@
   font-size: 32px;
   line-height: 1;
   margin-top: 50px;
+  margin-bottom: 10px;
 }
 .h1-content p {
   letter-spacing: -0.025em;
@@ -716,7 +717,7 @@
   background-color: #f57221;
   width: 0%;
   height: 100%;
-  animation: load 20s linear infinite;
+  animation: load 12s linear infinite;
   border-radius: 9999px;
 }
 

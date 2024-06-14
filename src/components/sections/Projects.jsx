@@ -36,7 +36,7 @@ const Projects = () => {
         <div className="p-title sm:text-[28px] text-[22px]">
           Explora mis últimos trabajos
         </div>
-        <div className="p-subtitle sm:text-[16px] text-[14px]">
+        <div className="p-subtitle sm:text-[16px] text-[15px]">
           Aquí encontrarás una selección de mis proyectos más destacados.
         </div>
       </m.div>

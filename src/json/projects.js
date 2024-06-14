@@ -12,26 +12,26 @@ export const projects = [
     h1:
       "<div>" +
       "<h1>Descripción General</h1>" +
-      "<p>Diseño para una página web de un negocio dedicado a la venta de cerveza artesanal.</p>" +
+      "<p>Desarrollada con Astro, React, Tailwind y CSS, la página ofrece una navegación rápida y eficiente. Astro proporciona una estructura ligera y optimizada para el mejor rendimiento. </p>" +
+      "<p></p>" +
+      '<p style="border-left:5px solid #a1a1a1; padding-left:10px">Nota: El proyecto es simplemente para la muestra del diseño; no posee ningún tipo de funcionalidad.</p>' +
       "</div>",
     h2:
       "<div>" +
       "<h1>Herramientas</h1>" +
       "<p><a target=_blank href=https://vercel.com/>Vercel</a> para el despliegue del sitio web.</p>" +
       "<p>Animaciones realizadas con <a target=_blank href=https://www.framer.com/motion/>Framer Motion</a>.</p>" +
-      "<p>Slider interactivo realizado con <a target=_blank href=https://swiperjs.com/demos>Swiper</a>.</p>" +
-      "<p></p>" +
-      "<p>Nota: el proyecto es simplemente para la muestra del diseño; no posee ningún tipo de funcionalidad.</p>" +
+      "<p>Slider realizado con <a target=_blank href=https://swiperjs.com/>Swiper</a>.</p>" +
       "</div>",
   },
   {
-    name: "Mammut",
+    name: "AirPods Max",
     category: "front-end",
-    image: "https://i.imgur.com/IS0rTpT.jpeg",
+    image: "https://i.imgur.com/pGwPZXN.jpeg",
     position: "top",
     url: "https://www.mammut.com/uk/en",
     github: "https://github.com/Basso-23/Portfolio_v2",
-    tech: ["Astro", "Tailwind", "CSS", "HTML", "Next"],
+    tech: ["Astro", "React", "Tailwind", "CSS"],
     summary:
       "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:

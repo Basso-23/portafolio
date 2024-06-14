@@ -58,7 +58,7 @@ const Hero = () => {
         setNameIndex(nameIndex - 1);
       }
       setKey((prevKey) => prevKey + 1);
-    }, 20000);
+    }, 12000);
 
     return () => clearTimeout(timer); // Limpiar el timeout anterior cuando el efecto se vuelva a ejecutar
   }, [nameIndex, originalData]);

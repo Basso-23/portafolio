@@ -32,7 +32,7 @@ const Modal = ({ project }) => {
   };
 
   return (
-    <section className="w-full lg:h-[100%] lg:mt-[-50px] h-[100dvh] inter">
+    <section className="w-full lg:h-[100%] lg:mt-[-50px] h-[100dvh] inter pb-10">
       {originalData
         .filter((item) => item.name === project)
         .map((item, index) => (
@@ -42,6 +42,32 @@ const Modal = ({ project }) => {
               <div className="modal-left">
                 <div className="modal-name">{item.name}</div>
                 <div className="modal-summary">{item.summary}</div>
+
+                <div className="left-end">
+                  <div className="modal-buttons">
+                    <a
+                      target="_blank"
+                      href={item.url}
+                      className="modal-visit hover:bg-[#ff9249]"
+                    >
+                      <span className="text-[13px] leading-none">
+                        Visitar página
+                      </span>
+                    </a>
+                    <div className="tooltip-container">
+                      <div className="tooltip fixedCenterX w-[90px]">
+                        Ver código
+                      </div>
+                      <a
+                        target="_blank"
+                        href={item.github}
+                        className="modal-github aspect-square hover:bg-[#343434]"
+                      >
+                        <Github />
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="modal-info mt-4">
                   <div>Estado</div>
@@ -72,32 +98,6 @@ const Modal = ({ project }) => {
                       </div>
                     </div>
                   ))}
-                </div>
-
-                <div className="left-end">
-                  <div className="modal-buttons">
-                    <a
-                      target="_blank"
-                      href={item.url}
-                      className="modal-visit hover:bg-[#ff9249]"
-                    >
-                      <span className="text-[13px] leading-none">
-                        Visitar página
-                      </span>
-                    </a>
-                    <div className="tooltip-container">
-                      <div className="tooltip fixedCenterX w-[90px]">
-                        Ver código
-                      </div>
-                      <a
-                        target="_blank"
-                        href={item.github}
-                        className="modal-github aspect-square hover:bg-[#343434]"
-                      >
-                        <Github />
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
 
