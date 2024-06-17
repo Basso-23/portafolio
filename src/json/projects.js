@@ -25,14 +25,16 @@ export const projects = [
       "</div>",
     copyright:
       "Este proyecto fue creado solo con fines educativos. Todos los recursos utilizados pertenecen a Pillarsbrewery.com",
+    status: 3,
   },
+
   {
     name: "Plataforma de votos",
     category: "full-stack",
     image: "https://i.imgur.com/AJTRQ56.jpeg",
     position: "top",
-    url: "https://www.mammut.com/uk/en",
-    github: "https://github.com/Basso-23/Portfolio_v2",
+    url: "https://www.google.com/",
+    github: "https://www.google.com/",
     tech: ["Next", "React", "Tailwind", "CSS", "Firebase"],
     summary:
       "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
@@ -54,6 +56,7 @@ export const projects = [
       "<p><a target=_blank href=https://www.framer.com/motion/>Framer Motion</a> para las animaciones; una biblioteca de Framer para desarrolladores.</p>" +
       "</div>",
     copyright: false,
+    status: 1,
   },
 
   {
@@ -61,8 +64,8 @@ export const projects = [
     category: "front-end",
     image: "https://i.imgur.com/pGwPZXN.jpeg",
     position: "top",
-    url: "https://airpods-max-rebuilt.webflow.io/",
-    github: "https://github.com/Basso-23/Portfolio_v2",
+    url: "https://airpods-max-one.vercel.app/",
+    github: "https://github.com/Basso-23/airpods-max",
     tech: ["Astro", "React", "Tailwind", "CSS"],
     summary:
       "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
@@ -85,6 +88,7 @@ export const projects = [
       "</div>",
     copyright:
       "Este proyecto fue creado solo con fines educativos. Todos los recursos utilizados pertenecen a Apple.com",
+    status: 2,
   },
   {
     name: "Nike",
@@ -92,8 +96,8 @@ export const projects = [
     image: "https://i.imgur.com/sfl3VSb.jpeg",
     position: "top",
     url: "https://www.nike.com/",
-    github: "https://github.com/Basso-23/Portfolio_v2",
-    tech: ["Astro", "React", "Tailwind", "CSS"],
+    github: "https://www.google.com/",
+    tech: ["Next", "React", "Tailwind", "CSS"],
     summary:
       "Diseño para una tienda de donas para destacar su variedad de sabores únicos en el cual se encarga de alta calidad.",
     h1:
@@ -115,5 +119,6 @@ export const projects = [
       "</div>",
     copyright:
       "Este proyecto fue creado solo con fines educativos. Todos los recursos utilizados pertenecen a Nike.com",
+    status: 1,
   },
 ];

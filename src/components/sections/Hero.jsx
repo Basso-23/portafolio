@@ -159,7 +159,11 @@ const Hero = () => {
                       <a
                         target="_blank"
                         href={item.url}
-                        className="tooltip-container h-visit hover:text-[#ff9249] hover:border-[#ff9249]"
+                        className={`tooltip-container h-visit hover:text-[#ff9249] hover:border-[#ff9249] ${
+                          item.status === 1
+                            ? " opacity-50 pointer-events-none"
+                            : false
+                        }`}
                       >
                         <Visit />
                         <div className="tooltip fixedCenterX w-[100px] ">
@@ -281,7 +285,11 @@ const Hero = () => {
                     <a
                       target="_blank"
                       href={item.url}
-                      className="tooltip-container h-visit hover:text-[#ff9249] hover:border-[#ff9249]"
+                      className={`tooltip-container h-visit hover:text-[#ff9249] hover:border-[#ff9249] ${
+                        item.status === 1
+                          ? " opacity-50 pointer-events-none"
+                          : false
+                      }`}
                     >
                       <Visit />
                       <div className="tooltip fixedCenterX w-[100px] ">

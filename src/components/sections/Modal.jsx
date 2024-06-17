@@ -48,13 +48,23 @@ const Modal = ({ project }) => {
                     <a
                       target="_blank"
                       href={item.url}
-                      className="modal-visit hover:bg-[#ff9249]"
+                      className={`modal-visit hover:bg-[#ff9249] ${
+                        item.status === 1
+                          ? " opacity-50 pointer-events-none"
+                          : false
+                      }`}
                     >
                       <span className="text-[13px] leading-none">
                         Visitar página
                       </span>
                     </a>
-                    <div className="tooltip-container">
+                    <div
+                      className={`tooltip-container ${
+                        item.status === 1
+                          ? " opacity-50 pointer-events-none"
+                          : false
+                      }`}
+                    >
                       <div className="tooltip fixedCenterX w-[90px]">
                         Ver código
                       </div>
@@ -75,8 +85,14 @@ const Modal = ({ project }) => {
                     style={{ marginTop: 0.5, justifyContent: "end" }}
                     className="pulse-container"
                   >
-                    <div className="pulse"></div>
-                    <div className="text-white">En línea</div>
+                    {item.status === 1 && <div className="pulse-1"></div>}
+                    {item.status === 2 && <div className="pulse-2"></div>}
+                    {item.status === 3 && <div className="pulse-3"></div>}
+                    <div className="text-white">
+                      {item.status === 1 && <>No disponible</>}
+                      {item.status === 2 && <>En proceso</>}
+                      {item.status === 3 && <>En línea</>}
+                    </div>
                   </div>
                 </div>
 
@@ -137,13 +153,23 @@ const Modal = ({ project }) => {
                 <a
                   target="_blank"
                   href={item.url}
-                  className="modal-visit hover:bg-[#ff9249]"
+                  className={`modal-visit hover:bg-[#ff9249] ${
+                    item.status === 1
+                      ? " opacity-50 pointer-events-none"
+                      : false
+                  }`}
                 >
                   <span className="text-[13px] leading-none">
                     Visitar página
                   </span>
                 </a>
-                <div className="tooltip-container">
+                <div
+                  className={`tooltip-container ${
+                    item.status === 1
+                      ? " opacity-50 pointer-events-none"
+                      : false
+                  }`}
+                >
                   <div className="tooltip fixedCenterX w-[90px]">
                     Ver código
                   </div>
@@ -163,8 +189,14 @@ const Modal = ({ project }) => {
                   style={{ marginTop: 0.5, justifyContent: "end" }}
                   className="pulse-container"
                 >
-                  <div className="pulse"></div>
-                  <div className="text-white">En línea</div>
+                  {item.status === 1 && <div className="pulse-1"></div>}
+                  {item.status === 2 && <div className="pulse-2"></div>}
+                  {item.status === 3 && <div className="pulse-3"></div>}
+                  <div className="text-white">
+                    {item.status === 1 && <>No disponible</>}
+                    {item.status === 2 && <>En proceso</>}
+                    {item.status === 3 && <>Completado</>}
+                  </div>
                 </div>
               </div>
 

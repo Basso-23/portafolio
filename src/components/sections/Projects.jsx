@@ -83,7 +83,13 @@ const Projects = () => {
                           <Info />
                         </div>
                       </AlertDialogTrigger>
-                      <div className="tooltip-container">
+                      <div
+                        className={`tooltip-container ${
+                          item.status === 1
+                            ? " opacity-50 pointer-events-none"
+                            : false
+                        }`}
+                      >
                         <div className="tooltip fixedCenterX w-[100px]">
                           Visitar página
                         </div>
