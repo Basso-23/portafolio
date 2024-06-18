@@ -74,14 +74,20 @@ const Footer = () => {
         {/*//*DESKTOP /////////////////////////////////////////////////////////////////////////////*/}
         <div className="f-desktop lg:flex hidden">
           <div className="text-[#838586] w-[25%]">
-            <div>©2024 CarlosBaso</div>
+            <a
+              target="_blank"
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
+              className=" hover:underline underline-offset-4"
+            >
+              ©2024 CarlosBaso
+            </a>
             <div className="pulse-container">
               <a
                 target="_blank"
                 href={
                   "https://drive.google.com/file/d/1xK_8f4Jdlcjvw8a87wCpgfKEqfCBmR3O/view?usp=sharing"
                 }
-                className="underline underline-offset-4"
+                className="hover:underline underline-offset-4"
               >
                 Ver currículum
               </a>
@@ -135,7 +141,13 @@ const Footer = () => {
         {/*//*MOBILE /////////////////////////////////////////////////////////////////////////////*/}
         <div className="f-mobile lg:hidden block">
           <div className="f-header">
-            <div>©2024 CarlosBaso</div>
+            <a
+              target="_blank"
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
+              className="hover:underline underline-offset-4"
+            >
+              ©2024 CarlosBaso
+            </a>
             <div
               style={{ marginTop: 0, justifyContent: "end" }}
               className="links-container"

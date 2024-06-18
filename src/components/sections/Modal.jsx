@@ -195,7 +195,7 @@ const Modal = ({ project }) => {
                   <div className="text-white">
                     {item.status === 1 && <>No disponible</>}
                     {item.status === 2 && <>En proceso</>}
-                    {item.status === 3 && <>Completado</>}
+                    {item.status === 3 && <>En línea</>}
                   </div>
                 </div>
               </div>
