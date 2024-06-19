@@ -75,14 +75,14 @@ export const projects = [
     category: "front-end",
     image: "https://i.imgur.com/pGwPZXN.jpeg",
     position: "top",
-    url: "https://airpods-max-one.vercel.app/",
+    url: "https://airpods-max-rust.vercel.app/",
     github: "https://github.com/Basso-23/airpods-max",
-    tech: ["Astro", "React", "Tailwind", "CSS"],
+    tech: ["Next", "React", "Tailwind", "CSS"],
     summary: "Diseño de la página web de los auriculares AirPods Max de Apple.",
     h1:
       "<div>" +
       "<h1>Descripción General </h1>" +
-      "<p>Un clon del diseño de la página web de los AirPods Max de Apple, desarrollado en Astro y React utilizando <a target=_blank href=https://docs.astro.build/es/concepts/islands/>Astro Islands</a>.</p>" +
+      "<p>Un clon del diseño de la página web de los AirPods Max de Apple, desarrollado en Next.js</p>" +
       "<p></p>" +
       '<p style="border-left:5px solid #a1a1a1; padding-left:10px">Nota: El proyecto es solo una demostración del diseño; no incluye ninguna funcionalidad.</p>' +
       "</div>",
