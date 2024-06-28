@@ -9,8 +9,9 @@ const App = ({ Component, pageProps }) => {
         <title>Carlos Baso</title>
         <meta
           name="description"
-          content="Carlos Baso - Portafolio; JavaScript, React, Next.js y más. ¡Echa un vistazo a mis proyectos!"
+          content="Carlos Baso - Portafolio. ¡Echa un vistazo a mis proyectos!"
         />
+        <meta itemprop="image" content="https://i.imgur.com/ZDRdAPi.jpeg" />
       </Head>
       <Component {...pageProps} />
       <Toaster position="top-center" />
